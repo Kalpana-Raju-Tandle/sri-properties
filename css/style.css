@@ -2511,26 +2511,7 @@ input[type="range"]::-moz-range-thumb { background: var(--gold-400); border-colo
 .tier__pct { font-family: var(--font-display); font-size: 1.15rem; font-weight: 600; color: var(--gold-300); }
 .tier__dur { font-size: 0.76rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--emerald); background: rgba(47, 210, 138, 0.15); padding: 3px 8px; border-radius: 6px; }
 
-/* Land Surety Banner */
-.land-surety-banner {
-  margin: 36px 0 44px; padding: clamp(24px, 3.5vw, 36px); border-radius: 26px;
-  background: linear-gradient(140deg, rgba(16, 42, 27, 0.95), rgba(7, 23, 16, 0.98));
-  border: 1px solid rgba(242, 192, 99, 0.4);
-  box-shadow: 0 20px 50px -20px rgba(0, 0, 0, 0.8), 0 0 30px rgba(242, 192, 99, 0.15);
-  display: grid; grid-template-columns: 1.2fr 1fr; gap: 24px; align-items: center;
-}
-.land-surety-banner__content h3 { font-size: clamp(1.35rem, 2.2vw, 1.85rem); color: #fff; margin: 8px 0 10px; }
-.land-surety-banner__content p { color: rgba(236, 240, 238, 0.78); font-size: 0.92rem; line-height: 1.6; margin: 0; }
-.surety-chip { display: inline-block; padding: 4px 12px; border-radius: 999px; font-size: 0.68rem; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; color: var(--forest-950); background: var(--gold-grad); }
-.land-surety-banner__stats { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-.surety-stat { padding: 14px 12px; border-radius: 16px; background: rgba(0, 0, 0, 0.35); border: 1px solid rgba(255, 255, 255, 0.08); text-align: center; }
-.surety-stat strong { display: block; font-family: var(--font-display); font-size: 1.2rem; color: var(--gold-300); }
-.surety-stat span { font-size: 0.72rem; color: rgba(236, 240, 238, 0.6); letter-spacing: 0.04em; }
 
-@media (max-width: 900px) {
-  .land-surety-banner { grid-template-columns: 1fr; }
-  .tiers__grid--base { grid-template-columns: 1fr; }
-}
 
 /* Guarantee Cards for Standard Package */
 .tier__guarantees { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 4px 0; }
