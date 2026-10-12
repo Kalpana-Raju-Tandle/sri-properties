@@ -1,807 +1,1246 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sri Properties — Farmland & Country Properties</title>
-  <meta name="description" content="Verified farmland, countryside homesteads, equestrian ranches and mountain retreats. Clear titles, transparent pricing, guided site visits." />
-  <link rel="canonical" href="https://sriproperties.biz/" />
-  <meta name="theme-color" content="#030a06" />
-  <meta property="og:title" content="Sri Properties — Farmland & Country Properties" />
-  <meta property="og:description" content="Own the land that owns your heart. Verified farmland & country estates." />
-  <meta property="og:image" content="assets/img/red-barn.jpg" />
-  <meta property="og:url" content="https://sriproperties.biz/" />
-  <meta property="og:type" content="website" />
-  <link rel="icon" type="image/png" href="assets/img/logo-icon.png" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Manrope:wght@400;500;600;700&family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;1,6..96,500&display=swap" rel="stylesheet" />
-  <link rel="preload" as="image" href="assets/img/red-barn-hd.jpg" />
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
-
-  <!-- ================= PRELOADER ================= -->
-  <div class="preloader" id="preloader" aria-hidden="true">
-    <div class="preloader__inner">
-      <div class="preloader__mark"><img src="assets/img/logo-icon.png" alt="" /></div>
-      <div class="preloader__brand">Sri <em>Properties</em></div>
-      <div class="preloader__bar"><span id="preloaderBar"></span></div>
-      <div class="preloader__count"><span id="preloaderCount">0</span>%</div>
-    </div>
-    <div class="preloader__panel preloader__panel--1"></div>
-    <div class="preloader__panel preloader__panel--2"></div>
-  </div>
-
-  <!-- custom cursor -->
-  <div class="cursor" id="cursor" aria-hidden="true"><span class="cursor__label" id="cursorLabel">View</span></div>
-  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
-  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
-
-  <!-- ================= HEADER ================= -->
-  <header class="header" id="header">
-    <div class="header__inner container">
-      <a href="#home" class="logo logo--plate logo--row" aria-label="Sri Properties home"><img src="assets/img/logo-icon.png" alt="" class="logo__icon" /><img src="assets/img/logo-wordmark.png" alt="Sri Properties" class="logo__word" /></a>
-
-      <nav class="nav" aria-label="Primary">
-        <a href="#why-sri" class="nav__link">Why Sri</a>
-        <a href="#properties" class="nav__link">Properties</a>
-        <a href="#lifestyle" class="nav__link">Lifestyles</a>
-        <a href="#process" class="nav__link">How it works</a>
-        <a href="#packages" class="nav__link">Packages</a>
-        <a href="#faq" class="nav__link">FAQ</a>
-      </nav>
-
-      <div class="header__actions">
-        <button class="saved-btn" id="savedBtn" aria-label="Show saved properties">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7.5-4.6-9.5-9.4C1.2 8.3 3.4 5 6.8 5c2 0 3.6 1.1 5.2 3 1.6-1.9 3.2-3 5.2-3 3.4 0 5.6 3.3 4.3 6.6C19.5 16.4 12 21 12 21z"/></svg>
-          <span class="saved-btn__count" id="savedCount">0</span>
-        </button>
-        <a href="#contact" class="btn btn--gold btn--sm magnetic" data-cursor="hide"><span>Book a site visit</span></a>
-        <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
-          <span></span><span></span>
-        </button>
-      </div>
-    </div>
-  </header>
-
-  <!-- mobile menu -->
-  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
-    <div class="mobile-menu__bg"></div>
-    <nav class="mobile-menu__nav container" aria-label="Mobile">
-      <a href="#properties"><span>01</span>Properties</a>
-      <a href="#lifestyle"><span>02</span>Lifestyles</a>
-      <a href="#process"><span>03</span>How it works</a>
-      <a href="#packages"><span>04</span>Packages</a>
-      <a href="#contact"><span>05</span>Contact</a>
-    </nav>
-    <div class="mobile-menu__foot container">
-      <a href="tel:+919900914080">+91 99009 14080</a>
-      <a href="mailto:contact@sriproperties.biz">contact@sriproperties.biz</a>
-    </div>
-  </div>
-
-  <main id="main">
-
-    <!-- ================= HERO ================= -->
-    <section class="hero" id="home">
-      <div class="hero__media" id="heroMedia">
-        <div class="hero__slide is-active" data-caption="Red Barn Homestead · Maple Hollow"><img src="assets/img/red-barn-hd.jpg" alt="" /></div>
-        <div class="hero__slide" data-caption="Sandalwood Plantation Estate"><video src="assets/video/sandalwood.mp4" poster="assets/img/sandalwood-poster.jpg" autoplay muted loop playsinline></video></div>
-        <div class="hero__slide" data-caption="Golden Valley Farm Estate · Prairie County"><img src="assets/img/aerial-farmland-hd.jpg" alt="" /></div>
-        <div class="hero__slide" data-caption="Willow Creek Equestrian Ranch · Blue Ridge"><img src="assets/img/luxury-ranch-hd.jpg" alt="" /></div>
-        <div class="hero__slide" data-caption="Summit Ridge Retreat · Granite Peaks"><img src="assets/img/mountain-house-hd.jpg" alt="" /></div>
-        <div class="hero__shade"></div>
-        <div class="hero__grain"></div>
-      </div>
-
-      
-
-      <div class="hero__content container">
-        <p class="eyebrow hero__eyebrow"><span class="eyebrow__line"></span>Verified farmland & country estates</p>
-        <h1 class="hero__title" id="heroTitle">
-          <span class="line"><span>Own the land</span></span>
-          <span class="line"><span>that owns <em>your heart.</em></span></span>
-        </h1>
-        <p class="hero__sub">Hand-picked acreage, homesteads and ranches — every plot surveyed, title-checked and ready for you to walk before you sign.</p>
-
-        <form class="search" id="heroSearch" role="search" aria-label="Find a property">
-          <div class="search__field">
-            <span class="search__label">Property type</span>
-            <select name="type" id="searchType">
-              <option value="farmland">Farmland</option>
-              <option value="villa">Villas</option>
-              <option value="site">Sites</option>
-              <option value="group-house">Group Houses</option>
-            </select>
-          </div>
-          <div class="search__field">
-            <span class="search__label">Size</span>
-            <select name="size" id="searchSize">
-              <option value="all">Any size</option>
-              <option value="0-10">Up to 10 acres</option>
-              <option value="10-30">10 – 30 acres</option>
-              <option value="30-999">30+ acres</option>
-            </select>
-          </div>
-          <div class="search__field">
-            <span class="search__label">Package</span>
-            <select name="budget" id="searchBudget">
-              <option value="all" data-hidden="1">Choose a package</option>
-              <option value="svc-basic" data-desc="Site visit, title check &amp; cost sheet" data-price="Basic">Basic Package</option>
-              <option value="svc-standard" data-desc="Adds survey, soil &amp; water testing" data-price="Standard">Standard Package</option>
-              <option value="premium" data-parent="1" data-desc="Silver, Gold &amp; Diamond levels" data-price="Premium">Premium Package</option>
-              <option value="svc-silver" data-sub="premium" data-desc="Adds legal &amp; registration support" data-price="Silver">Silver</option>
-              <option value="svc-gold" data-sub="premium" data-desc="Adds fencing, planting &amp; 6 months care" data-price="Gold">Gold</option>
-              <option value="svc-diamond" data-sub="premium" data-desc="Adds 1 year land management" data-price="Diamond">Diamond</option>
-            </select>
-          </div>
-          <button class="btn btn--gold search__btn magnetic" type="submit">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
-            <span>Search</span>
-          </button>
-        </form>
-
-        <p class="hero__tagline">Real Land. Real Growth. Real Happiness.</p>
-        <ul class="hero__values" aria-label="Why Sri Properties">
-          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19C5 9 11 4 20 4c0 9-5 15-15 15z"/><path d="M5 19l8-8"/></svg><strong>Real asset backed</strong><span>Tangible land, long-term value</span></li>
-          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg><strong>Transparent process</strong><span>Clear terms, in writing</span></li>
-          <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.3"/><path d="M17 14c2.5 0 4 1.8 4 4.5"/></svg><strong>Community driven</strong><span>Like-minded land owners</span></li>
-          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/></svg><strong>Long-term value</strong><span>Land for generations</span></li>
-        </ul>
-      </div>
-
-      <div class="hero__bottom container">
-        <div class="hero__caption"><span class="dot"></span><span id="heroCaption">Red Barn Homestead · Maple Hollow</span></div>
-        <div class="hero__dots" id="heroDots" role="tablist" aria-label="Hero slides">
-          <button role="tab" aria-label="Slide 1" class="is-active"><i></i></button>
-          <button role="tab" aria-label="Slide 2"><i></i></button>
-          <button role="tab" aria-label="Slide 3"><i></i></button>
-          <button role="tab" aria-label="Slide 4"><i></i></button>
-          <button role="tab" aria-label="Slide 5"><i></i></button>
-        </div>
-        <a href="#about" class="hero__scroll" aria-label="Scroll down"><span>Scroll</span><i></i></a>
-      </div>
-    </section>
-
-    <!-- ================= MARQUEE ================= -->
-    <div class="marquee" aria-hidden="true">
-      <div class="marquee__track">
-        <span>Farmland</span><i>✦</i><span>Villas</span><i>✦</i><span>Sites</span><i>✦</i><span>Group Houses</span><i>✦</i><span>Farmland</span><i>✦</i><span>Villas</span><i>✦</i><span>Sites</span><i>✦</i><span>Group Houses</span><i>✦</i><span>Farmland</span><i>✦</i><span>Villas</span><i>✦</i><span>Sites</span><i>✦</i><span>Group Houses</span><i>✦</i>
-        <span>Farmland</span><i>✦</i><span>Villas</span><i>✦</i><span>Sites</span><i>✦</i><span>Group Houses</span><i>✦</i><span>Farmland</span><i>✦</i><span>Villas</span><i>✦</i><span>Sites</span><i>✦</i><span>Group Houses</span><i>✦</i><span>Farmland</span><i>✦</i><span>Villas</span><i>✦</i><span>Sites</span><i>✦</i><span>Group Houses</span><i>✦</i>
-      </div>
-    </div>
-
-    <!-- ================= ABOUT ================= -->
-    <section class="about section" id="about">
-      <div class="container about__grid">
-        <div class="about__text">
-          <p class="eyebrow" data-reveal><span class="eyebrow__line"></span>About Sri Properties</p>
-          <h2 class="section-title about__title" data-split>Land you can walk, farm <em>and pass down.</em></h2>
-          <p class="about__lead" data-reveal>Sri Properties makes buying farmland simple and transparent. Every plot is surveyed, title-checked and walked by our team before it's listed, so you can decide with confidence.</p>
-          <ul class="about__points" data-reveal>
-            <li>
-              <span class="about__icon"><svg viewBox="0 0 24 24"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M10 13l2 2 4-4"/></svg></span>
-              <div><strong>Verified titles</strong><span>Legal checks done upfront</span></div>
-            </li>
-            <li>
-              <span class="about__icon"><svg viewBox="0 0 24 24"><path d="M3 20l6-16 6 16M6 13h6"/><path d="M15 8h6M18 5v6"/></svg></span>
-              <div><strong>Surveyed plots</strong><span>GPS-marked boundaries</span></div>
-            </li>
-            <li>
-              <span class="about__icon"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
-              <div><strong>Guided visits</strong><span>Walk the land first</span></div>
-            </li>
-          </ul>
-          <div class="about__actions" data-reveal>
-            <a href="#properties" class="btn btn--dark magnetic"><span>Explore properties</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-            <a href="#process" class="link-arrow">How buying works <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-          </div>
-        </div>
-        <div class="about__visual">
-          <figure class="about__img about__img--a reveal-img"><img src="assets/img/aerial-farmland.jpg" alt="Aerial view of patchwork farmland with a winding road" loading="lazy" data-speed="-0.08" /></figure>
-          <div class="about__chip" data-reveal>
-            <span class="about__chip-icon"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span>
-            <div><strong>100%</strong><span>Title-verified listings</span></div>
-          </div>
-          <figure class="about__img about__img--b reveal-img"><img src="assets/img/red-barn.jpg" alt="Red barn and white farmhouse at sunset" loading="lazy" data-speed="0.06" /></figure>
-          <div class="about__badge" data-reveal>
-            <svg viewBox="0 0 120 120" class="about__badge-ring" aria-hidden="true">
-              <defs><path id="circlePath" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/></defs>
-              <text><textPath href="#circlePath" textLength="286" lengthAdjust="spacing">VERIFIED · SURVEYED · TRUSTED · </textPath></text>
-            </svg>
-            <svg viewBox="0 0 64 64" class="about__badge-leaf" aria-hidden="true"><path d="M32 6C18 18 12 30 12 40a20 20 0 0 0 40 0C52 30 46 18 32 6z"/></svg>
-          </div>
-        </div>
-      </div>
-
-      <div class="container stats">
-        <div class="stat" data-reveal><strong><span class="counter" data-to="12400">0</span>+</strong><span>Acres transacted</span></div>
-        <div class="stat" data-reveal><strong><span class="counter" data-to="860">0</span>+</strong><span>Families settled</span></div>
-        <div class="stat" data-reveal><strong><span class="counter" data-to="18">0</span></strong><span>Years in the field</span></div>
-        <div class="stat" data-reveal><strong><span class="counter" data-to="100">0</span>%</strong><span>Title-verified listings</span></div>
-      </div>
-    </section>
-
-    <div class="divider" aria-hidden="true"><svg class="divider__topo" viewBox="0 0 1440 64" preserveAspectRatio="none"><path class="t1" d="M0 18 Q120 0 240 18 Q360 36 480 18 Q600 0 720 18 Q840 36 960 18 Q1080 0 1200 18 Q1320 36 1440 18"/><path class="t2" d="M0 32 Q120 54 240 32 Q360 10 480 32 Q600 54 720 32 Q840 10 960 32 Q1080 54 1200 32 Q1320 10 1440 32"/><path class="t2g" d="M0 32 Q120 54 240 32 Q360 10 480 32 Q600 54 720 32 Q840 10 960 32 Q1080 54 1200 32 Q1320 10 1440 32"/><path class="t3" d="M0 46 Q120 28 240 46 Q360 64 480 46 Q600 28 720 46 Q840 64 960 46 Q1080 28 1200 46 Q1320 64 1440 46"/></svg><span class="divider__emblem"><img src="assets/img/logo-icon.png" alt="" /></span></div>
-
-    <!-- ================= PROPERTIES ================= -->
-        <!-- ================= BROCHURE: WHY SRI / LAND UNIT ================= -->
-    <section class="bro section" id="why-sri">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow" data-reveal><span class="eyebrow__line"></span>People · Properties · Prosperity</p>
-            <h2 class="section-title" data-split>More than land. <em>A brighter future.</em></h2>
-          </div>
-          <p class="section-lead" data-reveal>Real land, real growth, real happiness. Own a piece of nature and build a legacy your family can stand on.</p>
-        </div>
-        <div class="why__grid bro__split">
-          <figure class="why__media" data-reveal>
-            <img src="assets/img/aerial-farmland-hd.jpg" alt="Aerial view of patchwork farmland with a winding road" loading="lazy" />
-            <figcaption class="why__badge why__badge--top"><span class="why__tick"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span><div><strong>Registered title</strong><span>Verified &amp; surveyed</span></div></figcaption>
-            <div class="why__badge why__badge--bottom"><strong>5.5 Guntas</strong><span>6,000 sq ft · minimum unit</span></div>
-          </figure>
-          <div class="why__list">
-            <ul class="perks bro__perks">
-              <li class="perk">
-                <span class="perk__icon"><svg viewBox="0 0 24 24"><path d="M5 19C5 9 11 4 20 4c0 9-5 15-15 15z"/><path d="M5 19l8-8"/></svg></span>
-                <div><h3>Real asset backed</h3><p>Tangible farmland with long-term value, not paper promises.</p></div>
-              </li>
-              <li class="perk">
-                <span class="perk__icon"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></span>
-                <div><h3>Transparent process</h3><p>Clear terms, complete transparency from first visit to registration.</p></div>
-              </li>
-              <li class="perk">
-                <span class="perk__icon"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.3"/><path d="M17 14c2.5 0 4 1.8 4 4.5"/></svg></span>
-                <div><h3>Community driven</h3><p>Grow together with like-minded people who value land.</p></div>
-              </li>
-              <li class="perk">
-                <span class="perk__icon"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/></svg></span>
-                <div><h3>Long-term value</h3><p>Own a piece of nature and build a legacy your family can stand on.</p></div>
-              </li>
-            </ul>
-            <ul class="bro__facts">
-              <li><strong>Minimum unit</strong><span>5.5 Guntas · about 6,000 sq ft</span></li>
-              <li><strong>Registered title</strong><span>Verified, surveyed and walked by our team</span></li>
-              <li><strong>Agreement provided</strong><span>Written terms for every purchase</span></li>
-            </ul>
-          </div>
-        </div>
-        <div class="bro__tri" data-reveal>
-          <div><img src="assets/img/sandalwood-hd.jpg" alt="Farmland today" loading="lazy" /><strong>Farmland today</strong><span>Own a piece of nature. Build lasting value.</span></div>
-          <div><img src="assets/img/red-barn.jpg" alt="Growth tomorrow" loading="lazy" /><strong>Growth tomorrow</strong><span>Your land, your future. A greener tomorrow.</span></div>
-          <div><img src="assets/img/mountain-house.jpg" alt="A home forever" loading="lazy" /><strong>A home forever</strong><span>Turn your dreams into reality.</span></div>
-        </div>
-        <p class="bro__note" data-reveal>This is not just a land purchase. It's a better tomorrow. Terms and prices are confirmed in writing before any purchase.</p>
-      </div>
-    </section>
-
-<div class="divider" aria-hidden="true"><svg class="divider__topo" viewBox="0 0 1440 64" preserveAspectRatio="none"><path class="t1" d="M0 18 Q120 0 240 18 Q360 36 480 18 Q600 0 720 18 Q840 36 960 18 Q1080 0 1200 18 Q1320 36 1440 18"/><path class="t2" d="M0 32 Q120 54 240 32 Q360 10 480 32 Q600 54 720 32 Q840 10 960 32 Q1080 54 1200 32 Q1320 10 1440 32"/><path class="t2g" d="M0 32 Q120 54 240 32 Q360 10 480 32 Q600 54 720 32 Q840 10 960 32 Q1080 54 1200 32 Q1320 10 1440 32"/><path class="t3" d="M0 46 Q120 28 240 46 Q360 64 480 46 Q600 28 720 46 Q840 64 960 46 Q1080 28 1200 46 Q1320 64 1440 46"/></svg><span class="divider__emblem"><img src="assets/img/logo-icon.png" alt="" /></span></div>
-
-    <section class="properties section section--cream" id="properties">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow" data-reveal><span class="eyebrow__line"></span>Featured listings</p>
-            <h2 class="section-title" data-split>Properties worth <em>the drive.</em></h2>
-          </div>
-          <p class="section-lead" data-reveal>Every listing has been walked, surveyed and title-checked by our team. Filter by what matters, save your favourites, and open any property for the full story.</p>
-        </div>
-
-        <div class="toolbar" data-reveal>
-          <div class="chips" id="filterChips" role="tablist" aria-label="Filter by property type">
-            <button class="chip is-active" data-filter="farmland" role="tab" aria-selected="true">Farmland</button>
-            <button class="chip" data-filter="villa" role="tab" aria-selected="false">Villas</button>
-            <button class="chip" data-filter="site" role="tab" aria-selected="false">Sites</button>
-            <button class="chip" data-filter="group-house" role="tab" aria-selected="false">Group Houses</button>
-            <button class="chip chip--saved" data-filter="saved" role="tab" aria-selected="false">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7.5-4.6-9.5-9.4C1.2 8.3 3.4 5 6.8 5c2 0 3.6 1.1 5.2 3 1.6-1.9 3.2-3 5.2-3 3.4 0 5.6 3.3 4.3 6.6C19.5 16.4 12 21 12 21z"/></svg>Saved
-            </button>
-          </div>
-          <div class="toolbar__right">
-            <span class="result-count" id="resultCount" aria-live="polite"></span>
-            <label class="sort">
-              <span class="visually-hidden">Sort by</span>
-              <select id="sortSelect">
-                <option value="featured">Featured</option>
-                <option value="price-asc">Price: low to high</option>
-                <option value="price-desc">Price: high to low</option>
-                <option value="size-desc">Largest first</option>
-              </select>
-            </label>
-          </div>
-        </div>
-
-        <div class="active-search" id="activeSearch" hidden></div>
-        <div class="grid" id="propertyGrid" aria-live="polite"></div>
-        <div class="empty" id="emptyState" hidden>
-          <h3>No properties match — yet.</h3>
-          <p>Try widening your filters, or tell us what you're looking for and we'll scout it for you.</p>
-          <button class="btn btn--dark" id="resetFilters"><span>Reset filters</span></button>
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= LIFESTYLE (horizontal) ================= -->
-    <div class="divider" aria-hidden="true"><svg class="divider__topo" viewBox="0 0 1440 64" preserveAspectRatio="none"><path class="t1" d="M0 18 Q120 0 240 18 Q360 36 480 18 Q600 0 720 18 Q840 36 960 18 Q1080 0 1200 18 Q1320 36 1440 18"/><path class="t2" d="M0 32 Q120 54 240 32 Q360 10 480 32 Q600 54 720 32 Q840 10 960 32 Q1080 54 1200 32 Q1320 10 1440 32"/><path class="t2g" d="M0 32 Q120 54 240 32 Q360 10 480 32 Q600 54 720 32 Q840 10 960 32 Q1080 54 1200 32 Q1320 10 1440 32"/><path class="t3" d="M0 46 Q120 28 240 46 Q360 64 480 46 Q600 28 720 46 Q840 64 960 46 Q1080 28 1200 46 Q1320 64 1440 46"/></svg><span class="divider__emblem"><img src="assets/img/logo-icon.png" alt="" /></span></div>
-
-    <section class="lands section" id="lifestyle">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow eyebrow--light" data-reveal><span class="eyebrow__line"></span>Choose your lifestyle</p>
-            <h2 class="section-title section-title--light" data-split>Sandalwood <em>plantation living.</em></h2>
-          </div>
-          <p class="section-lead section-lead--light" data-reveal>Drip-irrigated rows of sandalwood, planted for the long term. Enquire to learn more.</p>
-        </div>
-        <div class="lands__row" id="landsRow" data-reveal>
-          <article class="land is-active" data-type="sandalwood" tabindex="0" aria-label="Sandalwood Plantation">
-            <img src="assets/img/sandalwood-hd.jpg" alt="Rows of young sandalwood trees on a plantation" loading="lazy" style="object-position:50% 60%" />
-            <div class="land__shade"></div>
-            <div class="land__rail"><span class="land__num">01</span><span class="land__vt">Sandalwood Plantation</span></div>
-            <div class="land__info">
-              <h3>Sandalwood Plantation</h3>
-              <p>Drip-irrigated plantation land planted in neat rows, for long-horizon growers and family estates.</p>
-              <a href="#contact" class="land__btn">Enquire now <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= AERIAL ================= -->
-    <div class="divider" aria-hidden="true"><svg class="divider__topo" viewBox="0 0 1440 64" preserveAspectRatio="none"><path class="t1" d="M0 18 Q120 0 240 18 Q360 36 480 18 Q600 0 720 18 Q840 36 960 18 Q1080 0 1200 18 Q1320 36 1440 18"/><path class="t2" d="M0 32 Q120 54 240 32 Q360 10 480 32 Q600 54 720 32 Q840 10 960 32 Q1080 54 1200 32 Q1320 10 1440 32"/><path class="t2g" d="M0 32 Q120 54 240 32 Q360 10 480 32 Q600 54 720 32 Q840 10 960 32 Q1080 54 1200 32 Q1320 10 1440 32"/><path class="t3" d="M0 46 Q120 28 240 46 Q360 64 480 46 Q600 28 720 46 Q840 64 960 46 Q1080 28 1200 46 Q1320 64 1440 46"/></svg><span class="divider__emblem"><img src="assets/img/logo-icon.png" alt="" /></span></div>
-
-    <section class="aerial" id="aerial">
-      <div class="aerial__head container">
-        <p class="eyebrow" data-reveal><span class="eyebrow__line"></span>Aerial tour</p>
-        <h2 class="section-title" data-split>See every acre <em>before you arrive.</em></h2>
-      </div>
-      <div class="aerial__stage" id="aerialStage">
-        <div class="aerial__frame" id="aerialFrame">
-          <video id="aerialVideo" src="assets/video/green-1.mp4" poster="assets/img/green-poster-1.jpg" muted loop playsinline preload="metadata"></video>
-          <div class="aerial__overlay">
-            <div class="aerial__copy">
-              <p>Every listing ships with a drone survey, boundary overlay and soil notes — so your first visit is a confirmation, not a gamble.</p>
-              <div class="aerial__switch" role="group" aria-label="Choose aerial clip">
-                <button class="is-active" data-src="assets/video/green-1.mp4" data-poster="assets/img/green-poster-1.jpg">Green valley</button>
-                <button data-src="assets/video/green-2.mp4" data-poster="assets/img/green-poster-2.jpg">Homestead hills</button>
-              </div>
-            </div>
-            <button class="aerial__play" id="aerialPlay" aria-label="Pause video">
-              <svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14M16 5v14"/></svg>
-              <svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l13-7.5z"/></svg>
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= WHY US ================= -->
-    <div class="divider" aria-hidden="true"><svg class="divider__topo" viewBox="0 0 1440 64" preserveAspectRatio="none"><path class="t1" d="M0 18 Q120 0 240 18 Q360 36 480 18 Q600 0 720 18 Q840 36 960 18 Q1080 0 1200 18 Q1320 36 1440 18"/><path class="t2" d="M0 32 Q120 54 240 32 Q360 10 480 32 Q600 54 720 32 Q840 10 960 32 Q1080 54 1200 32 Q1320 10 1440 32"/><path class="t2g" d="M0 32 Q120 54 240 32 Q360 10 480 32 Q600 54 720 32 Q840 10 960 32 Q1080 54 1200 32 Q1320 10 1440 32"/><path class="t3" d="M0 46 Q120 28 240 46 Q360 64 480 46 Q600 28 720 46 Q840 64 960 46 Q1080 28 1200 46 Q1320 64 1440 46"/></svg><span class="divider__emblem"><img src="assets/img/logo-icon.png" alt="" /></span></div>
-
-    <section class="why section section--dark" id="why">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow eyebrow--light" data-reveal><span class="eyebrow__line"></span>Why Sri Properties</p>
-            <h2 class="section-title section-title--light" data-split>Buying land, <em>minus the guesswork.</em></h2>
-          </div>
-          <p class="section-lead section-lead--light" data-reveal>Land deals go wrong in the details. We obsess over them so you don't have to.</p>
-        </div>
-
-        <div class="why__grid" id="features">
-          <figure class="why__media" data-reveal>
-            <img src="assets/img/luxury-ranch-hd.jpg" alt="Stone ranch manor with fenced paddocks and a pond" loading="lazy" />
-            <figcaption class="why__badge why__badge--top"><span class="why__tick"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span><div><strong>Title verified</strong><span>Legal review complete</span></div></figcaption>
-            <div class="why__badge why__badge--bottom"><strong>42.0 ac</strong><span>Surveyed · GPS corners marked</span></div>
-          </figure>
-          <div class="why__list">
-            <ul class="perks">
-              <li class="perk">
-                <span class="perk__icon"><svg viewBox="0 0 24 24"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M10 13l2 2 4-4"/></svg></span>
-                <div><h3>Clear, verified titles</h3><p>Independent legal review of ownership, encumbrances and zoning before a listing goes live.</p></div>
-              </li>
-              <li class="perk">
-                <span class="perk__icon"><svg viewBox="0 0 24 24"><path d="M3 20l6-16 6 16M6 13h6"/><path d="M15 8h6M18 5v6"/></svg></span>
-                <div><h3>Surveyed & demarcated</h3><p>Licensed surveyors mark every boundary. You get the plat map and GPS corners.</p></div>
-              </li>
-              <li class="perk">
-                <span class="perk__icon"><svg viewBox="0 0 24 24"><path d="M12 2.5c3.5 4 6 7.6 6 11a6 6 0 0 1-12 0c0-3.4 2.5-7 6-11z"/></svg></span>
-                <div><h3>Water & power checked</h3><p>Well yields, water rights and grid connection tested and documented up front.</p></div>
-              </li>
-              <li class="perk">
-                <span class="perk__icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M15 9.5c0-1.2-1.3-2-3-2s-3 .8-3 2 1.3 1.7 3 2.2 3 1 3 2.3-1.3 2-3 2-3-.8-3-2"/></svg></span>
-                <div><h3>Transparent pricing</h3><p>One clear price. Fees, taxes and closing costs itemised in writing before you sign.</p></div>
-              </li>
-              <li class="perk">
-                <span class="perk__icon"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10M10 20v-6h4v6"/></svg></span>
-                <div><h3>Guided site visits</h3><p>Walk the land with a local expert. Transport and soil reports arranged for you.</p></div>
-              </li>
-              <li class="perk">
-                <span class="perk__icon"><svg viewBox="0 0 24 24"><path d="M12 22V12M12 12c0-4 3-7 8-7 0 5-3 7-8 7zM12 15c0-3-2.5-5.5-7-5.5 0 4 2.5 5.5 7 5.5z"/></svg></span>
-                <div><h3>After-sale land care</h3><p>Optional fencing, plantation, caretaking and lease management while you are away.</p></div>
-              </li>
-            </ul>
-            <a href="#process" class="btn btn--gold magnetic why__cta"><span>See how buying works</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= PROCESS ================= -->
-    <div class="divider" aria-hidden="true"><svg class="divider__topo" viewBox="0 0 1440 64" preserveAspectRatio="none"><path class="t1" d="M0 18 Q120 0 240 18 Q360 36 480 18 Q600 0 720 18 Q840 36 960 18 Q1080 0 1200 18 Q1320 36 1440 18"/><path class="t2" d="M0 32 Q120 54 240 32 Q360 10 480 32 Q600 54 720 32 Q840 10 960 32 Q1080 54 1200 32 Q1320 10 1440 32"/><path class="t2g" d="M0 32 Q120 54 240 32 Q360 10 480 32 Q600 54 720 32 Q840 10 960 32 Q1080 54 1200 32 Q1320 10 1440 32"/><path class="t3" d="M0 46 Q120 28 240 46 Q360 64 480 46 Q600 28 720 46 Q840 64 960 46 Q1080 28 1200 46 Q1320 64 1440 46"/></svg><span class="divider__emblem"><img src="assets/img/logo-icon.png" alt="" /></span></div>
-
-    <section class="process section section--dark" id="process">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow eyebrow--light" data-reveal><span class="eyebrow__line"></span>How it works</p>
-            <h2 class="section-title section-title--light" data-split>From first look <em>to your own gate.</em></h2>
-          </div>
-          <p class="section-lead section-lead--light" data-reveal>A clear five-step path. Most buyers go from first call to registration in 3–6 weeks.</p>
-        </div>
-        
-            <div class="process__grid">
-              <div class="process__aside">
-                <h3 class="panel-subtitle">From First Look <em>To Your Own Gate</em></h3>
-                <p class="section-lead section-lead--light">A clear five-step path. Most buyers go from first call to registration in 3–6 weeks.</p>
-                <figure class="process__img reveal-img"><img src="assets/img/luxury-ranch.jpg" alt="Fenced paddock leading to a stone manor" loading="lazy" data-speed="-0.06" /></figure>
-              </div>
-              <ol class="steps" id="steps">
-                <li class="step"><span class="step__num">01</span><div><h3>Discover</h3><p>Browse listings, watch aerial tours and shortlist properties. Tell us your use — farming, homestead, retreat or long-term holding.</p></div></li>
-                <li class="step"><span class="step__num">02</span><div><h3>Visit the land</h3><p>We schedule a guided site visit. Walk the boundaries, meet neighbours, see water sources and road access in person.</p></div></li>
-                <li class="step"><span class="step__num">03</span><div><h3>Verify everything</h3><p>Receive the title report, survey map and utility documents. Have your own lawyer review them — we encourage it.</p></div></li>
-                <li class="step"><span class="step__num">04</span><div><h3>Agree &amp; register</h3><p>Sign a clear sale agreement with an itemised cost sheet, then complete registration at the local land office.</p></div></li>
-                <li class="step"><span class="step__num">05</span><div><h3>Take the keys</h3><p>Physical handover with boundary walk-through. Optional land care services to fence, plant or lease your acres.</p></div></li>
-                <span class="steps__line" aria-hidden="true"><i id="stepsLine"></i></span>
-              </ol>
-            </div>
-      </div>
-    </section>
-
-    
-
-
-    <!-- ================= BUYER PACKAGES ================= -->
-    <div class="divider" aria-hidden="true"><svg class="divider__topo" viewBox="0 0 1440 64" preserveAspectRatio="none"><path class="t1" d="M0 18 Q120 0 240 18 Q360 36 480 18 Q600 0 720 18 Q840 36 960 18 Q1080 0 1200 18 Q1320 36 1440 18"/><path class="t2" d="M0 32 Q120 54 240 32 Q360 10 480 32 Q600 54 720 32 Q840 10 960 32 Q1080 54 1200 32 Q1320 10 1440 32"/><path class="t2g" d="M0 32 Q120 54 240 32 Q360 10 480 32 Q600 54 720 32 Q840 10 960 32 Q1080 54 1200 32 Q1320 10 1440 32"/><path class="t3" d="M0 46 Q120 28 240 46 Q360 64 480 46 Q600 28 720 46 Q840 64 960 46 Q1080 28 1200 46 Q1320 64 1440 46"/></svg><span class="divider__emblem"><img src="assets/img/logo-icon.png" alt="" /></span></div>
-
-    <section class="tiers section" id="packages">
-      <div class="container">
-        <div class="section-head tiers__head">
-          <div>
-            <p class="eyebrow eyebrow--light" data-reveal><span class="eyebrow__line"></span>Buyer packages</p>
-            <h2 class="section-title section-title--light" data-split>Basic, Standard <em>&amp; Premium.</em></h2>
-          </div>
-          <p class="section-lead section-lead--light" data-reveal>Choose how much we handle for you, from the first site visit to caring for the land after you buy.</p>
-        </div>
-
-        <div class="tiers__grid tiers__grid--base">
-            <article class="tier tier--basic" id="tier-basic" data-reveal>
-              
-              <div class="tier__crest"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 6C14 14 10 22 10 29a14 14 0 0 0 28 0c0-7-4-15-14-23z"/><path d="M24 18v22"/></svg></div>
-              <h3 class="tier__name">Basic Package</h3>
-              <p class="tier__tag">Start with the essentials</p>
-              <div class="tier__fee"><strong>Fee on request</strong><span>One-time service fee</span></div>
-              <ul class="tier__list"><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Guided site visit with a local expert</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Title check summary</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Itemised cost sheet</span></li></ul>
-              <a href="#contact" class="btn tier__btn" data-tier="Basic Package"><span>Choose Basic</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-            </article>
-            <article class="tier tier--standard" id="tier-standard" data-reveal>
-              
-              <div class="tier__crest"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 5l15 6v11c0 10-6 17-15 21C15 39 9 32 9 22V11z"/><path d="M17 24l5 5 9-10"/></svg></div>
-              <h3 class="tier__name">Standard Package</h3>
-              <p class="tier__tag">Verified and surveyed</p>
-              <div class="tier__fee"><strong>Fee on request</strong><span>One-time service fee</span></div>
-              <ul class="tier__list"><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Everything in Basic</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Survey map with GPS corners</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Soil and water testing</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Registration guidance</span></li></ul>
-              <a href="#contact" class="btn tier__btn" data-tier="Standard Package"><span>Choose Standard</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-            </article>
-        </div>
-
-        <div class="tiers__label" data-reveal><span></span><p>Premium packages <em>Silver · Gold · Diamond</em></p><span></span></div>
-        <div class="tiers__grid">
-            <article class="tier tier--silver" id="tier-silver" data-reveal>
-              
-              <div class="tier__crest"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 34l-3-18 10 8 9-14 9 14 10-8-3 18z"/><path d="M8 38h32"/></svg></div>
-              <h3 class="tier__name">Silver Package</h3>
-              <p class="tier__tag">Full paperwork support</p>
-              <div class="tier__fee"><strong>Fee on request</strong><span>One-time service fee</span></div>
-              <ul class="tier__list"><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Everything in Standard</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Legal paperwork support</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Registration assistance</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Priority site-visit slots</span></li></ul>
-              <a href="#contact" class="btn tier__btn" data-tier="Silver Package"><span>Choose Silver</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-            </article>
-            <article class="tier tier--gold is-rec" id="tier-gold" data-reveal>
-              <span class="tier__badge">Recommended</span>
-              <div class="tier__crest"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 34l-3-18 10 8 9-14 9 14 10-8-3 18z"/><path d="M8 38h32"/></svg></div>
-              <h3 class="tier__name">Gold Package</h3>
-              <p class="tier__tag">Plus land setup and care</p>
-              <div class="tier__fee"><strong>Fee on request</strong><span>One-time service fee</span></div>
-              <ul class="tier__list"><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Everything in Silver</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Boundary fencing</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Plantation setup</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>6 months of land care</span></li></ul>
-              <a href="#contact" class="btn tier__btn" data-tier="Gold Package"><span>Choose Gold</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-            </article>
-            <article class="tier tier--diamond" id="tier-diamond" data-reveal>
-              
-              <div class="tier__crest"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M14 8h20l8 11-18 21L6 19z"/><path d="M6 19h36M18 8l-4 11 10 21 10-21-4-11"/></svg></div>
-              <h3 class="tier__name">Diamond Package</h3>
-              <p class="tier__tag">End-to-end, long-term care</p>
-              <div class="tier__fee"><strong>Fee on request</strong><span>One-time service fee</span></div>
-              <ul class="tier__list"><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Everything in Gold</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>1 year of land management</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Lease management</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Dedicated land advisor</span></li></ul>
-              <a href="#contact" class="btn tier__btn" data-tier="Diamond Package"><span>Choose Diamond</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-            </article>
-        </div>
-        <p class="tiers__note" data-reveal><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16.5v.5"/></svg>Service packages for land buyers. Not an investment product. No returns are offered.</p>
-      </div>
-    </section>
-
-
-    <!-- ================= TESTIMONIALS ================= -->
-    <div class="divider" aria-hidden="true"><svg class="divider__topo" viewBox="0 0 1440 64" preserveAspectRatio="none"><path class="t1" d="M0 18 Q120 0 240 18 Q360 36 480 18 Q600 0 720 18 Q840 36 960 18 Q1080 0 1200 18 Q1320 36 1440 18"/><path class="t2" d="M0 32 Q120 54 240 32 Q360 10 480 32 Q600 54 720 32 Q840 10 960 32 Q1080 54 1200 32 Q1320 10 1440 32"/><path class="t2g" d="M0 32 Q120 54 240 32 Q360 10 480 32 Q600 54 720 32 Q840 10 960 32 Q1080 54 1200 32 Q1320 10 1440 32"/><path class="t3" d="M0 46 Q120 28 240 46 Q360 64 480 46 Q600 28 720 46 Q840 64 960 46 Q1080 28 1200 46 Q1320 64 1440 46"/></svg><span class="divider__emblem"><img src="assets/img/logo-icon.png" alt="" /></span></div>
-
-    <section class="testimonials section section--dark" id="stories">
-      <div class="testimonials__bg"><img src="assets/img/mountain-house-hd.jpg" alt="" loading="lazy" data-speed="-0.12" /></div>
-      <div class="container testimonials__inner">
-        <p class="eyebrow eyebrow--light" data-reveal><span class="eyebrow__line"></span>Owner stories</p>
-        <div class="quotes" id="quotes">
-          <!-- SAMPLE CONTENT: replace with real, permission-granted client testimonials before going live -->
-          <figure class="quote is-active">
-            <blockquote>“We walked three properties in one afternoon and every document was already in the folder. It was the calmest big decision we've ever made.”</blockquote>
-            <figcaption><strong>Sample Client</strong><span>Homestead buyer</span></figcaption>
-          </figure>
-          <figure class="quote">
-            <blockquote>“The drone survey matched the boundary stones to the metre. Our lawyer said it was the cleanest land file he'd reviewed all year.”</blockquote>
-            <figcaption><strong>Sample Client</strong><span>Farmland buyer</span></figcaption>
-          </figure>
-          <figure class="quote">
-            <blockquote>“They didn't push. They showed us the well test, the road easement and the neighbours — then let us take our time.”</blockquote>
-            <figcaption><strong>Sample Client</strong><span>Ranch buyer</span></figcaption>
-          </figure>
-        </div>
-        <div class="quotes__nav">
-          <button class="round-btn" id="quotePrev" aria-label="Previous story"><svg viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button>
-          <span class="quotes__count"><b id="quoteIdx">01</b> / 03</span>
-          <button class="round-btn" id="quoteNext" aria-label="Next story"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= FAQ ================= -->
-    <div class="divider" aria-hidden="true"><svg class="divider__topo" viewBox="0 0 1440 64" preserveAspectRatio="none"><path class="t1" d="M0 18 Q120 0 240 18 Q360 36 480 18 Q600 0 720 18 Q840 36 960 18 Q1080 0 1200 18 Q1320 36 1440 18"/><path class="t2" d="M0 32 Q120 54 240 32 Q360 10 480 32 Q600 54 720 32 Q840 10 960 32 Q1080 54 1200 32 Q1320 10 1440 32"/><path class="t2g" d="M0 32 Q120 54 240 32 Q360 10 480 32 Q600 54 720 32 Q840 10 960 32 Q1080 54 1200 32 Q1320 10 1440 32"/><path class="t3" d="M0 46 Q120 28 240 46 Q360 64 480 46 Q600 28 720 46 Q840 64 960 46 Q1080 28 1200 46 Q1320 64 1440 46"/></svg><span class="divider__emblem"><img src="assets/img/logo-icon.png" alt="" /></span></div>
-
-    <section class="faq section section--cream" id="faq">
-      <div class="container faq__grid">
-        <div>
-          <p class="eyebrow" data-reveal><span class="eyebrow__line"></span>Questions</p>
-          <h2 class="section-title" data-split>Good questions, <em>straight answers.</em></h2>
-          <p class="section-lead" data-reveal>Can't find yours? <a href="#contact" class="text-link">Ask a land advisor.</a></p>
-          <div class="advisor" data-reveal>
-            <div class="advisor__top">
-              <span class="advisor__emblem"><img src="assets/img/logo-icon.png" alt="" /></span>
-              <div>
-                <strong>Talk to a land advisor</strong>
-                <span class="advisor__status"><i></i>Usually replies within 1 business day</span>
-              </div>
-            </div>
-            <p>Local experts who walk every plot themselves. Ask about titles, water, financing or a specific listing.</p>
-            <div class="advisor__actions">
-              <a href="#contact" class="btn btn--gold btn--sm"><span>Book a visit</span></a>
-              <a href="tel:+919900914080" class="btn btn--glass btn--sm"><span>Call us</span></a>
-            </div>
-          </div>
-        </div>
-        <div class="faq__side">
-          <label class="faq__search">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
-            <input type="search" id="faqSearch" placeholder="Search questions…" aria-label="Search questions" autocomplete="off" />
-            <span class="faq__count" id="faqCount">5 questions</span>
-          </label>
-          <div class="accordion" id="accordion">
-          <details class="acc" open>
-            <summary><span class="acc__ico"><svg viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></span><span class="acc__q">Can I visit a property before committing?</span><i></i></summary>
-            <div class="acc__body"><p>Always. We strongly recommend at least one guided visit. Book a slot through the form below and we'll coordinate timing, directions and a local expert to meet you on site.</p></div>
-          </details>
-          <details class="acc">
-            <summary><span class="acc__ico"><svg viewBox="0 0 24 24"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M10 13h6M10 17h6"/></svg></span><span class="acc__q">What documents will I receive?</span><i></i></summary>
-            <div class="acc__body"><p>A title report, survey/plat map with GPS corners, tax records, any easements or encumbrances, and utility documentation (water, power, road access). You're encouraged to have your own lawyer review everything.</p></div>
-          </details>
-          <details class="acc">
-            <summary><span class="acc__ico"><svg viewBox="0 0 24 24"><circle cx="9" cy="9" r="5"/><path d="M14.5 6.5a5 5 0 1 1-4 9.5"/></svg></span><span class="acc__q">Do you help with financing?</span><i></i></summary>
-            <div class="acc__body"><p>We can introduce you to lenders who specialise in land and agricultural loans. Rates and approval are set by the lender.</p></div>
-          </details>
-          <details class="acc">
-            <summary><span class="acc__ico"><svg viewBox="0 0 24 24"><path d="M12 22V12M12 12c0-4 3-7 8-7 0 5-3 7-8 7zM12 15c0-3-2.5-5.5-7-5.5 0 4 2.5 5.5 7 5.5z"/></svg></span><span class="acc__q">Can someone manage the land after I buy?</span><i></i></summary>
-            <div class="acc__body"><p>Yes. Our optional land-care service covers fencing, plantation, caretaking and finding vetted tenants if you'd like to lease the land to local farmers.</p></div>
-          </details>
-          <details class="acc">
-            <summary><span class="acc__ico"><svg viewBox="0 0 24 24"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"/><path d="M9 8h6M9 12h6"/></svg></span><span class="acc__q">Are there any hidden fees?</span><i></i></summary>
-            <div class="acc__body"><p>No. Before you sign, you get an itemised sheet showing the property price, registration charges, taxes and any service fees. What's on the sheet is what you pay.</p></div>
-          </details>
-        </div>
-          <p class="faq__none" id="faqNone" hidden>No matching questions. <a href="#contact" class="text-link">Ask an advisor directly.</a></p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= CONTACT ================= -->
-    <div class="divider" aria-hidden="true"><svg class="divider__topo" viewBox="0 0 1440 64" preserveAspectRatio="none"><path class="t1" d="M0 18 Q120 0 240 18 Q360 36 480 18 Q600 0 720 18 Q840 36 960 18 Q1080 0 1200 18 Q1320 36 1440 18"/><path class="t2" d="M0 32 Q120 54 240 32 Q360 10 480 32 Q600 54 720 32 Q840 10 960 32 Q1080 54 1200 32 Q1320 10 1440 32"/><path class="t2g" d="M0 32 Q120 54 240 32 Q360 10 480 32 Q600 54 720 32 Q840 10 960 32 Q1080 54 1200 32 Q1320 10 1440 32"/><path class="t3" d="M0 46 Q120 28 240 46 Q360 64 480 46 Q600 28 720 46 Q840 64 960 46 Q1080 28 1200 46 Q1320 64 1440 46"/></svg><span class="divider__emblem"><img src="assets/img/logo-icon.png" alt="" /></span></div>
-
-    <section class="contact" id="contact">
-      <div class="contact__media"><img src="assets/img/red-barn-hd.jpg" alt="" loading="lazy" data-speed="-0.1" /></div>
-      <div class="container contact__grid">
-        <div class="contact__info">
-          <p class="eyebrow eyebrow--light" data-reveal><span class="eyebrow__line"></span>Book a site visit</p>
-          <h2 class="section-title section-title--light" data-split>Come walk <em>the land.</em></h2>
-          <p class="section-lead section-lead--light" data-reveal>Pick a property and a date. A land advisor will confirm within one business day.</p>
-          <ul class="contact__list" data-reveal>
-            <li><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><a href="tel:+919900914080">+91 99009 14080</a></li>
-            <li><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a href="mailto:contact@sriproperties.biz">contact@sriproperties.biz</a></li>
-            <li><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><span>Your office address, City, State</span></li>
-          </ul>
-        </div>
-
-        <form class="form" id="visitForm" novalidate data-reveal>
-          <div class="form__body">
-            <div class="form__head">
-              <div>
-                <h3>Schedule your visit</h3>
-                <p>Takes under a minute. We'll confirm by phone.</p>
-              </div>
-              <span class="form__pill"><i></i>Free · No obligation</span>
-            </div>
-            <div class="form__row">
-              <div class="field">
-                <input id="fName" name="name" type="text" placeholder=" " autocomplete="name" required />
-                <label for="fName">Full name</label>
-                <small class="field__err">Please enter your name.</small>
-              </div>
-              <div class="field">
-                <input id="fPhone" name="phone" type="tel" placeholder=" " autocomplete="tel" required pattern="[0-9+()\-\s]{7,}" />
-                <label for="fPhone">Phone</label>
-                <small class="field__err">Please enter a valid phone number.</small>
-              </div>
-            </div>
-            <div class="field">
-              <input id="fEmail" name="email" type="email" placeholder=" " autocomplete="email" required />
-              <label for="fEmail">Email</label>
-              <small class="field__err">Please enter a valid email.</small>
-            </div>
-            <div class="form__row">
-              <div class="field field--select">
-                <select id="fProperty" name="property" required>
-                  <option value="" disabled selected hidden></option>
-                  <option value="Not sure yet">Not sure yet — advise me</option>
-                </select>
-                <label for="fProperty">Property of interest</label>
-                <small class="field__err">Please choose an option.</small>
-              </div>
-              <div class="field">
-                <input id="fDate" name="date" type="date" required />
-                <label for="fDate" class="is-static">Preferred visit date</label>
-                <small class="field__err">Please pick a future date.</small>
-              </div>
-            </div>
-            <div class="field">
-              <textarea id="fMsg" name="message" rows="3" placeholder=" "></textarea>
-              <label for="fMsg">Anything we should know? (optional)</label>
-            </div>
-            <label class="check">
-              <input type="checkbox" id="fConsent" required />
-              <span class="check__box"></span>
-              <span>I agree to be contacted about this enquiry.</span>
-            </label>
-            <button class="btn btn--gold btn--block form__submit magnetic" type="submit"><span>Request site visit</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
-          </div>
-          <div class="form__success" id="formSuccess" hidden>
-            <svg viewBox="0 0 52 52" class="tick" aria-hidden="true"><circle cx="26" cy="26" r="24"/><path d="M15 27l7 7 15-16"/></svg>
-            <h3>Request received!</h3>
-            <p id="successMsg">A land advisor will call you within one business day to confirm your visit.</p>
-            <button type="button" class="btn btn--ghost-light" id="formAgain"><span>Book another visit</span></button>
-          </div>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <!-- ================= FOOTER ================= -->
-  <footer class="footer footer--modern">
-    <div class="container">
-      <div class="fcta">
-        <div class="fcta__text">
-          <span class="fcta__kicker"><i></i>Site visits open this week</span>
-          <h3>Ready to walk <em>your land?</em></h3>
-          <p>Book a guided visit and see the boundaries, water and road access in person.</p>
-        </div>
-        <div class="fcta__actions">
-          <a href="#contact" class="btn btn--gold magnetic"><span>Book a site visit</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-          <a href="tel:+919900914080" class="btn btn--glass"><span>Call +91 99009 14080</span></a>
-        </div>
-      </div>
-
-      <div class="fgrid">
-        <div class="fgrid__brand">
-          <a href="#home" class="logo logo--plate logo--plate-lg" aria-label="Sri Properties home"><img src="assets/img/logo.png" alt="Sri Properties — Land | Homes | A Better Tomorrow" class="logo__img" /></a>
-          <p>Verified farmland and country estates. Land you can walk, farm, build on and pass down.</p>
-          <div class="socials">
-            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
-            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z"/></svg></a>
-            <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10 9.5v5l4.5-2.5z"/></svg></a>
-            <a href="#" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7z"/><path d="M9 9.5c.5 2 2.5 4 4.5 4.5l1-1.2 2 .8-.4 1.6c-3.6.4-7.6-3.6-7.2-7.2L10.5 7.6l.8 2-1.3.9z"/></svg></a>
-          </div>
-        </div>
-        <nav class="fgrid__col" aria-label="Explore">
-          <h4>Explore</h4>
-          <a href="#properties">Properties</a><a href="#lifestyle">Lifestyles</a><a href="#aerial">Aerial tour</a>
-        </nav>
-        <nav class="fgrid__col" aria-label="Company">
-          <h4>Company</h4>
-          <a href="#about">About</a><a href="#process">How it works</a><a href="#faq">FAQ</a><a href="#contact">Contact</a>
-        </nav>
-        <div class="fgrid__col fgrid__news">
-          <h4>New listings, first</h4>
-          <p>Get fresh plots in your inbox before they go public.</p>
-          <form class="news" id="newsForm" novalidate>
-            <input type="email" placeholder="Your email" aria-label="Email for new listing alerts" required />
-            <button type="submit" aria-label="Subscribe"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
-          </form>
-          <small class="news__msg" id="newsMsg" aria-live="polite"></small>
-          <ul class="fcontact">
-            <li><span>Email</span>contact@sriproperties.biz</li>
-            <li><span>Office</span>Your office address, City</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="wm-art" id="wmArt" aria-hidden="true">
-        <span class="wm-art__fill">Sri <em>Properties</em></span>
-      </div>
-      <p class="wm-tag" aria-hidden="true">Land <i></i> Homes <i></i> A Better Tomorrow</p>
-
-      <div class="footer__bottom">
-        <span>© <span id="year"></span> Sri Properties. All rights reserved.</span>
-        <span>Listings and figures shown are illustrative. Verify all details independently before purchase.</span>
-        <a href="#home" class="to-top" aria-label="Back to top"><svg viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></svg></a>
-      </div>
-    </div>
-  </footer>
-
-  <!-- ================= PROPERTY DRAWER ================= -->
-  <div class="drawer" id="drawer" aria-hidden="true">
-    <div class="drawer__backdrop" data-close></div>
-    <aside class="drawer__panel" role="dialog" aria-modal="true" aria-labelledby="dTitle">
-      <button class="drawer__close round-btn" data-close aria-label="Close property details"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
-      <div class="drawer__scroll" id="drawerScroll" data-lenis-prevent>
-        <div class="gallery">
-          <div class="gallery__main"><img id="dMainImg" src="" alt="" /></div>
-          <div class="gallery__thumbs" id="dThumbs"></div>
-        </div>
-        <div class="drawer__body">
-          <div class="drawer__head">
-            <span class="badge" id="dType"></span>
-            <h2 id="dTitle"></h2>
-            <p class="drawer__loc" id="dLoc"></p>
-          </div>
-          <div class="drawer__price"><strong id="dPrice"></strong><span id="dPerAcre"></span></div>
-          <div class="facts" id="dFacts"></div>
-          <p class="drawer__desc" id="dDesc"></p>
-          <h4 class="drawer__sub">Highlights</h4>
-          <ul class="amenities" id="dAmen"></ul>
-          <div class="drawer__cta">
-            <button class="btn btn--gold btn--block" id="dBook"><span>Book a visit to this property</span></button>
-            <div class="drawer__cta-row">
-              <button class="btn btn--outline" id="dSave"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7.5-4.6-9.5-9.4C1.2 8.3 3.4 5 6.8 5c2 0 3.6 1.1 5.2 3 1.6-1.9 3.2-3 5.2-3 3.4 0 5.6 3.3 4.3 6.6C19.5 16.4 12 21 12 21z"/></svg><span>Save</span></button>
-              <button class="btn btn--outline" id="dShare"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 14a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1M14 10a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg><span>Copy link</span></button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </aside>
-  </div>
-
-  <div class="toast" id="toast" role="status" aria-live="polite"></div>
-
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
-  <script src="js/data.js"></script>
-  <script src="js/main.js"></script>
-</body>
-</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sri Properties — Farmland & Country Properties</title>
+  <meta name="description" content="Verified farmland, countryside homesteads, equestrian ranches and mountain retreats. Clear titles, transparent pricing, guided site visits." />
+  <link rel="canonical" href="https://sriproperties.biz/" />
+  <meta name="theme-color" content="#030a06" />
+  <meta property="og:title" content="Sri Properties — Farmland & Country Properties" />
+  <meta property="og:description" content="Own the land that owns your heart. Verified farmland & country estates." />
+  <meta property="og:image" content="assets/img/red-barn.jpg" />
+  <meta property="og:url" content="https://sriproperties.biz/" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/png" href="assets/img/logo-icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Manrope:wght@400;500;600;700&family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;1,6..96,500&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="assets/img/red-barn-hd.jpg" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ================= PRELOADER ================= -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader__inner">
+      <div class="preloader__mark"><img src="assets/img/logo-icon.png" alt="" /></div>
+      <div class="preloader__brand">Sri <em>Properties</em></div>
+      <div class="preloader__bar"><span id="preloaderBar"></span></div>
+      <div class="preloader__count"><span id="preloaderCount">0</span>%</div>
+    </div>
+    <div class="preloader__panel preloader__panel--1"></div>
+    <div class="preloader__panel preloader__panel--2"></div>
+  </div>
+
+  <!-- custom cursor -->
+  <div class="cursor" id="cursor" aria-hidden="true"><span class="cursor__label" id="cursorLabel">View</span></div>
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header" id="header">
+    <div class="header__inner container">
+      <a href="#home" class="logo logo--plate logo--row" aria-label="Sri Properties home"><img src="assets/img/logo-icon.png" alt="" class="logo__icon" /><img src="assets/img/logo-wordmark.png" alt="Sri Properties" class="logo__word" /></a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#why-sri" class="nav__link">Why Sri</a>
+        <a href="#properties" class="nav__link">Properties</a>
+        <a href="#lifestyle" class="nav__link">Lifestyles</a>
+        <a href="#process" class="nav__link">How it works</a>
+        <a href="#packages" class="nav__link">Packages</a>
+        <a href="#faq" class="nav__link">FAQ</a>
+      </nav>
+
+      <div class="header__actions">
+        <button class="saved-btn" id="savedBtn" aria-label="Show saved properties">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7.5-4.6-9.5-9.4C1.2 8.3 3.4 5 6.8 5c2 0 3.6 1.1 5.2 3 1.6-1.9 3.2-3 5.2-3 3.4 0 5.6 3.3 4.3 6.6C19.5 16.4 12 21 12 21z"/></svg>
+          <span class="saved-btn__count" id="savedCount">0</span>
+        </button>
+        <a href="#contact" class="btn btn--gold btn--sm magnetic" data-cursor="hide"><span>Book a site visit</span></a>
+        <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- mobile menu -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu__bg"></div>
+    <nav class="mobile-menu__nav container" aria-label="Mobile">
+      <a href="#properties"><span>01</span>Properties</a>
+      <a href="#lifestyle"><span>02</span>Lifestyles</a>
+      <a href="#process"><span>03</span>How it works</a>
+      <a href="#packages"><span>04</span>Packages</a>
+      <a href="#contact"><span>05</span>Contact</a>
+    </nav>
+    <div class="mobile-menu__foot container">
+      <a href="tel:+10000000000">+1 (000) 000-0000</a>
+      <a href="mailto:contact@sriproperties.biz">contact@sriproperties.biz</a>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="home">
+      <div class="hero__media" id="heroMedia">
+        <div class="hero__slide is-active" data-caption="Red Barn Homestead · Maple Hollow"><img src="assets/img/red-barn-hd.jpg" alt="" /></div>
+        <div class="hero__slide" data-caption="Sandalwood Plantation Estate"><video src="assets/video/sandalwood.mp4" poster="assets/img/sandalwood-poster.jpg" autoplay muted loop playsinline></video></div>
+        <div class="hero__slide" data-caption="Golden Valley Farm Estate · Prairie County"><img src="assets/img/aerial-farmland-hd.jpg" alt="" /></div>
+        <div class="hero__slide" data-caption="Willow Creek Equestrian Ranch · Blue Ridge"><img src="assets/img/luxury-ranch-hd.jpg" alt="" /></div>
+        <div class="hero__slide" data-caption="Summit Ridge Retreat · Granite Peaks"><img src="assets/img/mountain-house-hd.jpg" alt="" /></div>
+        <div class="hero__shade"></div>
+        <div class="hero__grain"></div>
+      </div>
+
+      <!-- HERO OFFER: hanging gold seal with ribbon banner (swaying) -->
+      <aside class="hero-tag" aria-label="Investment offer">
+        <span class="hero-tag__cord" aria-hidden="true"></span>
+        <span class="hero-tag__ring" aria-hidden="true"></span>
+        <div class="hero-tag__seal">
+          <svg viewBox="0 0 200 200" aria-hidden="true">
+            <defs>
+              <linearGradient id="sealGold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff1bf"/><stop offset=".35" stop-color="#e9b955"/><stop offset=".65" stop-color="#a9741c"/><stop offset="1" stop-color="#f6dc8e"/></linearGradient>
+              <radialGradient id="sealFace" cx=".5" cy=".3" r=".85"><stop offset="0" stop-color="#235a3d"/><stop offset=".6" stop-color="#0d2b1c"/><stop offset="1" stop-color="#061a10"/></radialGradient>
+              <path id="sealArc" d="M100 100 m-72 0 a72 72 0 1 1 144 0 a72 72 0 1 1 -144 0"/>
+            </defs>
+            <path d="M199.6 100.0 L199.0 101.7 L197.5 103.4 L195.5 105.0 L193.6 106.5 L192.3 108.1 L192.0 109.7 L192.7 111.4 L194.2 113.2 L195.9 115.2 L197.3 117.1 L197.7 119.0 L197.1 120.6 L195.5 122.0 L193.3 123.3 L191.0 124.4 L189.2 125.6 L188.4 127.0 L188.5 128.8 L189.5 130.8 L190.8 133.0 L191.9 135.3 L192.2 137.3 L191.6 138.9 L189.9 140.0 L187.6 140.8 L185.1 141.5 L182.9 142.3 L181.6 143.4 L181.2 145.0 L181.6 147.1 L182.4 149.5 L183.1 151.9 L183.3 154.1 L182.5 155.7 L180.9 156.6 L178.6 157.1 L176.0 157.3 L173.6 157.5 L171.9 158.2 L170.9 159.5 L170.8 161.5 L171.1 164.0 L171.4 166.5 L171.3 168.8 L170.4 170.4 L168.8 171.3 L166.5 171.4 L164.0 171.1 L161.5 170.8 L159.5 170.9 L158.2 171.9 L157.5 173.6 L157.3 176.0 L157.1 178.6 L156.6 180.9 L155.7 182.5 L154.1 183.3 L151.9 183.1 L149.5 182.4 L147.1 181.6 L145.0 181.2 L143.4 181.6 L142.3 182.9 L141.5 185.1 L140.8 187.6 L140.0 189.9 L138.9 191.6 L137.3 192.2 L135.3 191.9 L133.0 190.8 L130.8 189.5 L128.8 188.5 L127.0 188.4 L125.6 189.2 L124.4 191.0 L123.3 193.3 L122.0 195.5 L120.6 197.1 L119.0 197.7 L117.1 197.3 L115.2 195.9 L113.2 194.2 L111.4 192.7 L109.7 192.0 L108.1 192.3 L106.5 193.6 L105.0 195.5 L103.4 197.5 L101.7 199.0 L100.0 199.6 L98.3 199.0 L96.6 197.5 L95.0 195.5 L93.5 193.6 L91.9 192.3 L90.3 192.0 L88.6 192.7 L86.8 194.2 L84.8 195.9 L82.9 197.3 L81.0 197.7 L79.4 197.1 L78.0 195.5 L76.7 193.3 L75.6 191.0 L74.4 189.2 L73.0 188.4 L71.2 188.5 L69.2 189.5 L67.0 190.8 L64.7 191.9 L62.7 192.2 L61.1 191.6 L60.0 189.9 L59.2 187.6 L58.5 185.1 L57.7 182.9 L56.6 181.6 L55.0 181.2 L52.9 181.6 L50.5 182.4 L48.1 183.1 L45.9 183.3 L44.3 182.5 L43.4 180.9 L42.9 178.6 L42.7 176.0 L42.5 173.6 L41.8 171.9 L40.5 170.9 L38.5 170.8 L36.0 171.1 L33.5 171.4 L31.2 171.3 L29.6 170.4 L28.7 168.8 L28.6 166.5 L28.9 164.0 L29.2 161.5 L29.1 159.5 L28.1 158.2 L26.4 157.5 L24.0 157.3 L21.4 157.1 L19.1 156.6 L17.5 155.7 L16.7 154.1 L16.9 151.9 L17.6 149.5 L18.4 147.1 L18.8 145.0 L18.4 143.4 L17.1 142.3 L14.9 141.5 L12.4 140.8 L10.1 140.0 L8.4 138.9 L7.8 137.3 L8.1 135.3 L9.2 133.0 L10.5 130.8 L11.5 128.8 L11.6 127.0 L10.8 125.6 L9.0 124.4 L6.7 123.3 L4.5 122.0 L2.9 120.6 L2.3 119.0 L2.7 117.1 L4.1 115.2 L5.8 113.2 L7.3 111.4 L8.0 109.7 L7.7 108.1 L6.4 106.5 L4.5 105.0 L2.5 103.4 L1.0 101.7 L0.4 100.0 L1.0 98.3 L2.5 96.6 L4.5 95.0 L6.4 93.5 L7.7 91.9 L8.0 90.3 L7.3 88.6 L5.8 86.8 L4.1 84.8 L2.7 82.9 L2.3 81.0 L2.9 79.4 L4.5 78.0 L6.7 76.7 L9.0 75.6 L10.8 74.4 L11.6 73.0 L11.5 71.2 L10.5 69.2 L9.2 67.0 L8.1 64.7 L7.8 62.7 L8.4 61.1 L10.1 60.0 L12.4 59.2 L14.9 58.5 L17.1 57.7 L18.4 56.6 L18.8 55.0 L18.4 52.9 L17.6 50.5 L16.9 48.1 L16.7 45.9 L17.5 44.3 L19.1 43.4 L21.4 42.9 L24.0 42.7 L26.4 42.5 L28.1 41.8 L29.1 40.5 L29.2 38.5 L28.9 36.0 L28.6 33.5 L28.7 31.2 L29.6 29.6 L31.2 28.7 L33.5 28.6 L36.0 28.9 L38.5 29.2 L40.5 29.1 L41.8 28.1 L42.5 26.4 L42.7 24.0 L42.9 21.4 L43.4 19.1 L44.3 17.5 L45.9 16.7 L48.1 16.9 L50.5 17.6 L52.9 18.4 L55.0 18.8 L56.6 18.4 L57.7 17.1 L58.5 14.9 L59.2 12.4 L60.0 10.1 L61.1 8.4 L62.7 7.8 L64.7 8.1 L67.0 9.2 L69.2 10.5 L71.2 11.5 L73.0 11.6 L74.4 10.8 L75.6 9.0 L76.7 6.7 L78.0 4.5 L79.4 2.9 L81.0 2.3 L82.9 2.7 L84.8 4.1 L86.8 5.8 L88.6 7.3 L90.3 8.0 L91.9 7.7 L93.5 6.4 L95.0 4.5 L96.6 2.5 L98.3 1.0 L100.0 0.4 L101.7 1.0 L103.4 2.5 L105.0 4.5 L106.5 6.4 L108.1 7.7 L109.7 8.0 L111.4 7.3 L113.2 5.8 L115.2 4.1 L117.1 2.7 L119.0 2.3 L120.6 2.9 L122.0 4.5 L123.3 6.7 L124.4 9.0 L125.6 10.8 L127.0 11.6 L128.8 11.5 L130.8 10.5 L133.0 9.2 L135.3 8.1 L137.3 7.8 L138.9 8.4 L140.0 10.1 L140.8 12.4 L141.5 14.9 L142.3 17.1 L143.4 18.4 L145.0 18.8 L147.1 18.4 L149.5 17.6 L151.9 16.9 L154.1 16.7 L155.7 17.5 L156.6 19.1 L157.1 21.4 L157.3 24.0 L157.5 26.4 L158.2 28.1 L159.5 29.1 L161.5 29.2 L164.0 28.9 L166.5 28.6 L168.8 28.7 L170.4 29.6 L171.3 31.2 L171.4 33.5 L171.1 36.0 L170.8 38.5 L170.9 40.5 L171.9 41.8 L173.6 42.5 L176.0 42.7 L178.6 42.9 L180.9 43.4 L182.5 44.3 L183.3 45.9 L183.1 48.1 L182.4 50.5 L181.6 52.9 L181.2 55.0 L181.6 56.6 L182.9 57.7 L185.1 58.5 L187.6 59.2 L189.9 60.0 L191.6 61.1 L192.2 62.7 L191.9 64.7 L190.8 67.0 L189.5 69.2 L188.5 71.2 L188.4 73.0 L189.2 74.4 L191.0 75.6 L193.3 76.7 L195.5 78.0 L197.1 79.4 L197.7 81.0 L197.3 82.9 L195.9 84.8 L194.2 86.8 L192.7 88.6 L192.0 90.3 L192.3 91.9 L193.6 93.5 L195.5 95.0 L197.5 96.6 L199.0 98.3Z" fill="url(#sealGold)"/>
+            <circle cx="100" cy="100" r="86" fill="none" stroke="#7a5314" stroke-opacity=".55" stroke-width="1"/>
+            <circle cx="100" cy="100" r="83" fill="url(#sealFace)" stroke="url(#sealGold)" stroke-width="3"/>
+            <g class="hero-tag__orbit">
+              <text font-size="9.5" font-weight="800" fill="#f2c063" letter-spacing="2"><textPath href="#sealArc" textLength="440" lengthAdjust="spacing">INVEST FROM ★ INVESTMENT STARTS ★ INVEST FROM ★ INVESTMENT STARTS ★</textPath></text>
+            </g>
+            <circle cx="100" cy="100" r="58" fill="none" stroke="#f2c063" stroke-opacity=".45" stroke-width="1" stroke-dasharray="1 3"/>
+          </svg>
+          <div class="hero-tag__center">
+            <strong class="hero-tag__amount"><small>$</small>100</strong>
+            <span class="hero-tag__unl">to Unlimited</span>
+          </div>
+          <i class="hero-tag__spark hero-tag__spark--a" aria-hidden="true"></i>
+          <i class="hero-tag__spark hero-tag__spark--b" aria-hidden="true"></i>
+        </div>
+        <div class="hero-tag__banner">
+          <b>2%</b>
+          <span>Profit Fund<em>Up to 100 weeks</em></span>
+        </div>
+      </aside>
+
+      <div class="hero__content container">
+        <p class="eyebrow hero__eyebrow"><span class="eyebrow__line"></span>Verified farmland & country estates</p>
+        <h1 class="hero__title" id="heroTitle">
+          <span class="line"><span>Own the land</span></span>
+          <span class="line"><span>that owns <em>your heart.</em></span></span>
+        </h1>
+        <p class="hero__sub">Hand-picked acreage, homesteads and ranches — every plot surveyed, title-checked and ready for you to walk before you sign.</p>
+
+        <form class="search" id="heroSearch" role="search" aria-label="Find a property">
+          <div class="search__field">
+            <span class="search__label">Property type</span>
+            <select name="type" id="searchType">
+              <option value="farmland">Farmland</option>
+              <option value="villa">Villas</option>
+              <option value="site">Sites</option>
+              <option value="group-house">Group Houses</option>
+            </select>
+          </div>
+          <div class="search__field">
+            <span class="search__label">Size</span>
+            <select name="size" id="searchSize">
+              <option value="all">Any size</option>
+              <option value="0-10">Up to 10 acres</option>
+              <option value="10-30">10 – 30 acres</option>
+              <option value="30-999">30+ acres</option>
+            </select>
+          </div>
+          <div class="search__field">
+            <span class="search__label">Package</span>
+            <select name="budget" id="searchBudget">
+              <option value="all" data-hidden="1">Choose a package</option>
+              <option value="svc-basic" data-desc="Site visit, title check &amp; cost sheet" data-price="Basic">Basic Package</option>
+              <option value="svc-standard" data-desc="Adds survey, soil &amp; water testing" data-price="Standard">Standard Package</option>
+              <option value="premium" data-parent="1" data-desc="Silver, Gold &amp; Diamond levels" data-price="Premium">Premium Package</option>
+              <option value="svc-silver" data-sub="premium" data-desc="Adds legal &amp; registration support" data-price="Silver">Silver</option>
+              <option value="svc-gold" data-sub="premium" data-desc="Adds fencing, planting &amp; 6 months care" data-price="Gold">Gold</option>
+              <option value="svc-diamond" data-sub="premium" data-desc="Adds 1 year land management" data-price="Diamond">Diamond</option>
+            </select>
+          </div>
+          <button class="btn btn--gold search__btn magnetic" type="submit">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+            <span>Search</span>
+          </button>
+        </form>
+
+        <p class="hero__tagline">Real Land. Real Growth. Real Happiness.</p>
+        <ul class="hero__values" aria-label="Why Sri Properties">
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19C5 9 11 4 20 4c0 9-5 15-15 15z"/><path d="M5 19l8-8"/></svg><strong>Real asset backed</strong><span>Tangible land, long-term value</span></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg><strong>Transparent process</strong><span>Clear terms, in writing</span></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.3"/><path d="M17 14c2.5 0 4 1.8 4 4.5"/></svg><strong>Community driven</strong><span>Like-minded land owners</span></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/></svg><strong>Long-term value</strong><span>Land for generations</span></li>
+        </ul>
+      </div>
+
+      <div class="hero__bottom container">
+        <div class="hero__caption"><span class="dot"></span><span id="heroCaption">Red Barn Homestead · Maple Hollow</span></div>
+        <div class="hero__dots" id="heroDots" role="tablist" aria-label="Hero slides">
+          <button role="tab" aria-label="Slide 1" class="is-active"><i></i></button>
+          <button role="tab" aria-label="Slide 2"><i></i></button>
+          <button role="tab" aria-label="Slide 3"><i></i></button>
+          <button role="tab" aria-label="Slide 4"><i></i></button>
+          <button role="tab" aria-label="Slide 5"><i></i></button>
+        </div>
+        <a href="#about" class="hero__scroll" aria-label="Scroll down"><span>Scroll</span><i></i></a>
+      </div>
+    </section>
+
+    <!-- ================= MARQUEE ================= -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Farmland</span><i>✦</i><span>Villas</span><i>✦</i><span>Sites</span><i>✦</i><span>Group Houses</span><i>✦</i><span>Farmland</span><i>✦</i><span>Villas</span><i>✦</i><span>Sites</span><i>✦</i><span>Group Houses</span><i>✦</i><span>Farmland</span><i>✦</i><span>Villas</span><i>✦</i><span>Sites</span><i>✦</i><span>Group Houses</span><i>✦</i>
+        <span>Farmland</span><i>✦</i><span>Villas</span><i>✦</i><span>Sites</span><i>✦</i><span>Group Houses</span><i>✦</i><span>Farmland</span><i>✦</i><span>Villas</span><i>✦</i><span>Sites</span><i>✦</i><span>Group Houses</span><i>✦</i><span>Farmland</span><i>✦</i><span>Villas</span><i>✦</i><span>Sites</span><i>✦</i><span>Group Houses</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="about section" id="about">
+      <div class="container about__grid">
+        <div class="about__text">
+          <p class="eyebrow" data-reveal><span class="eyebrow__line"></span>About Sri Properties</p>
+          <h2 class="section-title about__title" data-split>Land you can walk, farm <em>and pass down.</em></h2>
+          <p class="about__lead" data-reveal>Sri Properties makes buying farmland simple and transparent. Every plot is surveyed, title-checked and walked by our team before it's listed, so you can decide with confidence.</p>
+          <ul class="about__points" data-reveal>
+            <li>
+              <span class="about__icon"><svg viewBox="0 0 24 24"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M10 13l2 2 4-4"/></svg></span>
+              <div><strong>Verified titles</strong><span>Legal checks done upfront</span></div>
+            </li>
+            <li>
+              <span class="about__icon"><svg viewBox="0 0 24 24"><path d="M3 20l6-16 6 16M6 13h6"/><path d="M15 8h6M18 5v6"/></svg></span>
+              <div><strong>Surveyed plots</strong><span>GPS-marked boundaries</span></div>
+            </li>
+            <li>
+              <span class="about__icon"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+              <div><strong>Guided visits</strong><span>Walk the land first</span></div>
+            </li>
+          </ul>
+          <div class="about__actions" data-reveal>
+            <a href="#properties" class="btn btn--dark magnetic"><span>Explore properties</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a href="#process" class="link-arrow">How buying works <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </div>
+        <div class="about__visual">
+          <figure class="about__img about__img--a reveal-img"><img src="assets/img/aerial-farmland.jpg" alt="Aerial view of patchwork farmland with a winding road" loading="lazy" data-speed="-0.08" /></figure>
+          <div class="about__chip" data-reveal>
+            <span class="about__chip-icon"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span>
+            <div><strong>100%</strong><span>Title-verified listings</span></div>
+          </div>
+          <figure class="about__img about__img--b reveal-img"><img src="assets/img/red-barn.jpg" alt="Red barn and white farmhouse at sunset" loading="lazy" data-speed="0.06" /></figure>
+          <div class="about__badge" data-reveal>
+            <svg viewBox="0 0 120 120" class="about__badge-ring" aria-hidden="true">
+              <defs><path id="circlePath" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/></defs>
+              <text><textPath href="#circlePath" textLength="286" lengthAdjust="spacing">VERIFIED · SURVEYED · TRUSTED · </textPath></text>
+            </svg>
+            <svg viewBox="0 0 64 64" class="about__badge-leaf" aria-hidden="true"><path d="M32 6C18 18 12 30 12 40a20 20 0 0 0 40 0C52 30 46 18 32 6z"/></svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="container stats">
+        <div class="stat" data-reveal><strong><span class="counter" data-to="12400">0</span>+</strong><span>Acres transacted</span></div>
+        <div class="stat" data-reveal><strong><span class="counter" data-to="860">0</span>+</strong><span>Families settled</span></div>
+        <div class="stat" data-reveal><strong><span class="counter" data-to="18">0</span></strong><span>Years in the field</span></div>
+        <div class="stat" data-reveal><strong><span class="counter" data-to="100">0</span>%</strong><span>Title-verified listings</span></div>
+      </div>
+    </section>
+
+    <div class="divider" aria-hidden="true"><svg class="divider__topo" viewBox="0 0 1440 64" preserveAspectRatio="none"><path class="t1" d="M0 18 Q120 0 240 18 Q360 36 480 18 Q600 0 720 18 Q840 36 960 18 Q1080 0 1200 18 Q1320 36 1440 18"/><path class="t2" d="M0 32 Q120 54 240 32 Q360 10 480 32 Q600 54 720 32 Q840 10 960 32 Q1080 54 1200 32 Q1320 10 1440 32"/><path class="t2g" d="M0 32 Q120 54 240 32 Q360 10 480 32 Q600 54 720 32 Q840 10 960 32 Q1080 54 1200 32 Q1320 10 1440 32"/><path class="t3" d="M0 46 Q120 28 240 46 Q360 64 480 46 Q600 28 720 46 Q840 64 960 46 Q1080 28 1200 46 Q1320 64 1440 46"/></svg><span class="divider__emblem"><img src="assets/img/logo-icon.png" alt="" /></span></div>
+
+    <!-- ================= PROPERTIES ================= -->
+        <!-- ================= BROCHURE: WHY SRI / LAND UNIT ================= -->
+    <section class="bro section" id="why-sri">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow" data-reveal><span class="eyebrow__line"></span>People · Properties · Prosperity</p>
+            <h2 class="section-title" data-split>More than land. <em>A brighter future.</em></h2>
+          </div>
+          <p class="section-lead" data-reveal>Real land, real growth, real happiness. Own a piece of nature and build a legacy your family can stand on.</p>
+        </div>
+        <div class="why__grid bro__split">
+          <figure class="why__media" data-reveal>
+            <img src="assets/img/aerial-farmland-hd.jpg" alt="Aerial view of patchwork farmland with a winding road" loading="lazy" />
+            <figcaption class="why__badge why__badge--top"><span class="why__tick"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span><div><strong>Registered title</strong><span>Verified &amp; surveyed</span></div></figcaption>
+            <div class="why__badge why__badge--bottom"><strong>5.5 Guntas</strong><span>6,000 sq ft · minimum unit</span></div>
+          </figure>
+          <div class="why__list">
+            <ul class="perks bro__perks">
+              <li class="perk">
+                <span class="perk__icon"><svg viewBox="0 0 24 24"><path d="M5 19C5 9 11 4 20 4c0 9-5 15-15 15z"/><path d="M5 19l8-8"/></svg></span>
+                <div><h3>Real asset backed</h3><p>Tangible farmland with long-term value, not paper promises.</p></div>
+              </li>
+              <li class="perk">
+                <span class="perk__icon"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></span>
+                <div><h3>Transparent process</h3><p>Clear terms, complete transparency from first visit to registration.</p></div>
+              </li>
+              <li class="perk">
+                <span class="perk__icon"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.3"/><path d="M17 14c2.5 0 4 1.8 4 4.5"/></svg></span>
+                <div><h3>Community driven</h3><p>Grow together with like-minded people who value land.</p></div>
+              </li>
+              <li class="perk">
+                <span class="perk__icon"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/></svg></span>
+                <div><h3>Long-term value</h3><p>Own a piece of nature and build a legacy your family can stand on.</p></div>
+              </li>
+            </ul>
+            <ul class="bro__facts">
+              <li><strong>Minimum unit</strong><span>5.5 Guntas · about 6,000 sq ft</span></li>
+              <li><strong>Land surety</strong><span>Surety agreement &amp; written terms before you commit</span></li>
+              <li><strong>Registered title</strong><span>Verified, surveyed and walked by our team</span></li>
+              <li><strong>Agreement provided</strong><span>Written terms for every purchase</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="bro__tri" data-reveal>
+          <div><img src="assets/img/sandalwood-hd.jpg" alt="Farmland today" loading="lazy" /><strong>Farmland today</strong><span>Own a piece of nature. Build lasting value.</span></div>
+          <div><img src="assets/img/red-barn.jpg" alt="Growth tomorrow" loading="lazy" /><strong>Growth tomorrow</strong><span>Your land, your future. A greener tomorrow.</span></div>
+          <div><img src="assets/img/mountain-house.jpg" alt="A home forever" loading="lazy" /><strong>A home forever</strong><span>Turn your dreams into reality.</span></div>
+        </div>
+        <p class="bro__note" data-reveal>This is not just a land purchase. It's a better tomorrow. Terms and prices are confirmed in writing before any purchase.</p>
+      </div>
+    </section>
+
+<div class="divider" aria-hidden="true"><svg class="divider__topo" viewBox="0 0 1440 64" preserveAspectRatio="none"><path class="t1" d="M0 18 Q120 0 240 18 Q360 36 480 18 Q600 0 720 18 Q840 36 960 18 Q1080 0 1200 18 Q1320 36 1440 18"/><path class="t2" d="M0 32 Q120 54 240 32 Q360 10 480 32 Q600 54 720 32 Q840 10 960 32 Q1080 54 1200 32 Q1320 10 1440 32"/><path class="t2g" d="M0 32 Q120 54 240 32 Q360 10 480 32 Q600 54 720 32 Q840 10 960 32 Q1080 54 1200 32 Q1320 10 1440 32"/><path class="t3" d="M0 46 Q120 28 240 46 Q360 64 480 46 Q600 28 720 46 Q840 64 960 46 Q1080 28 1200 46 Q1320 64 1440 46"/></svg><span class="divider__emblem"><img src="assets/img/logo-icon.png" alt="" /></span></div>
+
+    <section class="properties section section--cream" id="properties">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow" data-reveal><span class="eyebrow__line"></span>Featured listings</p>
+            <h2 class="section-title" data-split>Properties worth <em>the drive.</em></h2>
+          </div>
+          <p class="section-lead" data-reveal>Every listing has been walked, surveyed and title-checked by our team. Filter by what matters, save your favourites, and open any property for the full story.</p>
+        </div>
+
+        <div class="toolbar" data-reveal>
+          <div class="chips" id="filterChips" role="tablist" aria-label="Filter by property type">
+            <button class="chip is-active" data-filter="farmland" role="tab" aria-selected="true">Farmland</button>
+            <button class="chip" data-filter="villa" role="tab" aria-selected="false">Villas</button>
+            <button class="chip" data-filter="site" role="tab" aria-selected="false">Sites</button>
+            <button class="chip" data-filter="group-house" role="tab" aria-selected="false">Group Houses</button>
+            <button class="chip chip--saved" data-filter="saved" role="tab" aria-selected="false">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7.5-4.6-9.5-9.4C1.2 8.3 3.4 5 6.8 5c2 0 3.6 1.1 5.2 3 1.6-1.9 3.2-3 5.2-3 3.4 0 5.6 3.3 4.3 6.6C19.5 16.4 12 21 12 21z"/></svg>Saved
+            </button>
+          </div>
+          <div class="toolbar__right">
+            <span class="result-count" id="resultCount" aria-live="polite"></span>
+            <label class="sort">
+              <span class="visually-hidden">Sort by</span>
+              <select id="sortSelect">
+                <option value="featured">Featured</option>
+                <option value="price-asc">Price: low to high</option>
+                <option value="price-desc">Price: high to low</option>
+                <option value="size-desc">Largest first</option>
+              </select>
+            </label>
+          </div>
+        </div>
+
+        <div class="active-search" id="activeSearch" hidden></div>
+        <div class="grid" id="propertyGrid" aria-live="polite"></div>
+        <div class="empty" id="emptyState" hidden>
+          <h3>No properties match — yet.</h3>
+          <p>Try widening your filters, or tell us what you're looking for and we'll scout it for you.</p>
+          <button class="btn btn--dark" id="resetFilters"><span>Reset filters</span></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= LIFESTYLE (horizontal) ================= -->
+    <div class="divider" aria-hidden="true"><svg class="divider__topo" viewBox="0 0 1440 64" preserveAspectRatio="none"><path class="t1" d="M0 18 Q120 0 240 18 Q360 36 480 18 Q600 0 720 18 Q840 36 960 18 Q1080 0 1200 18 Q1320 36 1440 18"/><path class="t2" d="M0 32 Q120 54 240 32 Q360 10 480 32 Q600 54 720 32 Q840 10 960 32 Q1080 54 1200 32 Q1320 10 1440 32"/><path class="t2g" d="M0 32 Q120 54 240 32 Q360 10 480 32 Q600 54 720 32 Q840 10 960 32 Q1080 54 1200 32 Q1320 10 1440 32"/><path class="t3" d="M0 46 Q120 28 240 46 Q360 64 480 46 Q600 28 720 46 Q840 64 960 46 Q1080 28 1200 46 Q1320 64 1440 46"/></svg><span class="divider__emblem"><img src="assets/img/logo-icon.png" alt="" /></span></div>
+
+    <section class="lands section" id="lifestyle">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow eyebrow--light" data-reveal><span class="eyebrow__line"></span>Choose your lifestyle</p>
+            <h2 class="section-title section-title--light" data-split>Sandalwood <em>plantation living.</em></h2>
+          </div>
+          <p class="section-lead section-lead--light" data-reveal>Drip-irrigated rows of sandalwood, planted for the long term. Enquire to learn more.</p>
+        </div>
+        <div class="lands__row" id="landsRow" data-reveal>
+          <article class="land is-active" data-type="sandalwood" tabindex="0" aria-label="Sandalwood Plantation">
+            <img src="assets/img/sandalwood-hd.jpg" alt="Rows of young sandalwood trees on a plantation" loading="lazy" style="object-position:50% 60%" />
+            <div class="land__shade"></div>
+            <div class="land__rail"><span class="land__num">01</span><span class="land__vt">Sandalwood Plantation</span></div>
+            <div class="land__info">
+              <h3>Sandalwood Plantation</h3>
+              <p>Drip-irrigated plantation land planted in neat rows, for long-horizon growers and family estates.</p>
+              <a href="#contact" class="land__btn">Enquire now <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= AERIAL ================= -->
+    <div class="divider" aria-hidden="true"><svg class="divider__topo" viewBox="0 0 1440 64" preserveAspectRatio="none"><path class="t1" d="M0 18 Q120 0 240 18 Q360 36 480 18 Q600 0 720 18 Q840 36 960 18 Q1080 0 1200 18 Q1320 36 1440 18"/><path class="t2" d="M0 32 Q120 54 240 32 Q360 10 480 32 Q600 54 720 32 Q840 10 960 32 Q1080 54 1200 32 Q1320 10 1440 32"/><path class="t2g" d="M0 32 Q120 54 240 32 Q360 10 480 32 Q600 54 720 32 Q840 10 960 32 Q1080 54 1200 32 Q1320 10 1440 32"/><path class="t3" d="M0 46 Q120 28 240 46 Q360 64 480 46 Q600 28 720 46 Q840 64 960 46 Q1080 28 1200 46 Q1320 64 1440 46"/></svg><span class="divider__emblem"><img src="assets/img/logo-icon.png" alt="" /></span></div>
+
+    <section class="aerial" id="aerial">
+      <div class="aerial__head container">
+        <p class="eyebrow" data-reveal><span class="eyebrow__line"></span>Aerial tour</p>
+        <h2 class="section-title" data-split>See every acre <em>before you arrive.</em></h2>
+      </div>
+      <div class="aerial__stage" id="aerialStage">
+        <div class="aerial__frame" id="aerialFrame">
+          <video id="aerialVideo" src="assets/video/green-1.mp4" poster="assets/img/green-poster-1.jpg" muted loop playsinline preload="metadata"></video>
+          <div class="aerial__overlay">
+            <div class="aerial__copy">
+              <p>Every listing ships with a drone survey, boundary overlay and soil notes — so your first visit is a confirmation, not a gamble.</p>
+              <div class="aerial__switch" role="group" aria-label="Choose aerial clip">
+                <button class="is-active" data-src="assets/video/green-1.mp4" data-poster="assets/img/green-poster-1.jpg">Green valley</button>
+                <button data-src="assets/video/green-2.mp4" data-poster="assets/img/green-poster-2.jpg">Homestead hills</button>
+              </div>
+            </div>
+            <button class="aerial__play" id="aerialPlay" aria-label="Pause video">
+              <svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14M16 5v14"/></svg>
+              <svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l13-7.5z"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= WHY US ================= -->
+    <div class="divider" aria-hidden="true"><svg class="divider__topo" viewBox="0 0 1440 64" preserveAspectRatio="none"><path class="t1" d="M0 18 Q120 0 240 18 Q360 36 480 18 Q600 0 720 18 Q840 36 960 18 Q1080 0 1200 18 Q1320 36 1440 18"/><path class="t2" d="M0 32 Q120 54 240 32 Q360 10 480 32 Q600 54 720 32 Q840 10 960 32 Q1080 54 1200 32 Q1320 10 1440 32"/><path class="t2g" d="M0 32 Q120 54 240 32 Q360 10 480 32 Q600 54 720 32 Q840 10 960 32 Q1080 54 1200 32 Q1320 10 1440 32"/><path class="t3" d="M0 46 Q120 28 240 46 Q360 64 480 46 Q600 28 720 46 Q840 64 960 46 Q1080 28 1200 46 Q1320 64 1440 46"/></svg><span class="divider__emblem"><img src="assets/img/logo-icon.png" alt="" /></span></div>
+
+    <section class="why section section--dark" id="why">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow eyebrow--light" data-reveal><span class="eyebrow__line"></span>Why Sri Properties</p>
+            <h2 class="section-title section-title--light" data-split>Buying land, <em>minus the guesswork.</em></h2>
+          </div>
+          <p class="section-lead section-lead--light" data-reveal>Land deals go wrong in the details. We obsess over them so you don't have to.</p>
+        </div>
+
+        <div class="why__grid" id="features">
+          <figure class="why__media" data-reveal>
+            <img src="assets/img/luxury-ranch-hd.jpg" alt="Stone ranch manor with fenced paddocks and a pond" loading="lazy" />
+            <figcaption class="why__badge why__badge--top"><span class="why__tick"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span><div><strong>Title verified</strong><span>Legal review complete</span></div></figcaption>
+            <div class="why__badge why__badge--bottom"><strong>42.0 ac</strong><span>Surveyed · GPS corners marked</span></div>
+          </figure>
+          <div class="why__list">
+            <ul class="perks">
+              <li class="perk">
+                <span class="perk__icon"><svg viewBox="0 0 24 24"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M10 13l2 2 4-4"/></svg></span>
+                <div><h3>Clear, verified titles</h3><p>Independent legal review of ownership, encumbrances and zoning before a listing goes live.</p></div>
+              </li>
+              <li class="perk">
+                <span class="perk__icon"><svg viewBox="0 0 24 24"><path d="M3 20l6-16 6 16M6 13h6"/><path d="M15 8h6M18 5v6"/></svg></span>
+                <div><h3>Surveyed & demarcated</h3><p>Licensed surveyors mark every boundary. You get the plat map and GPS corners.</p></div>
+              </li>
+              <li class="perk">
+                <span class="perk__icon"><svg viewBox="0 0 24 24"><path d="M12 2.5c3.5 4 6 7.6 6 11a6 6 0 0 1-12 0c0-3.4 2.5-7 6-11z"/></svg></span>
+                <div><h3>Water & power checked</h3><p>Well yields, water rights and grid connection tested and documented up front.</p></div>
+              </li>
+              <li class="perk">
+                <span class="perk__icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M15 9.5c0-1.2-1.3-2-3-2s-3 .8-3 2 1.3 1.7 3 2.2 3 1 3 2.3-1.3 2-3 2-3-.8-3-2"/></svg></span>
+                <div><h3>Transparent pricing</h3><p>One clear price. Fees, taxes and closing costs itemised in writing before you sign.</p></div>
+              </li>
+              <li class="perk">
+                <span class="perk__icon"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10M10 20v-6h4v6"/></svg></span>
+                <div><h3>Guided site visits</h3><p>Walk the land with a local expert. Transport and soil reports arranged for you.</p></div>
+              </li>
+              <li class="perk">
+                <span class="perk__icon"><svg viewBox="0 0 24 24"><path d="M12 22V12M12 12c0-4 3-7 8-7 0 5-3 7-8 7zM12 15c0-3-2.5-5.5-7-5.5 0 4 2.5 5.5 7 5.5z"/></svg></span>
+                <div><h3>After-sale land care</h3><p>Optional fencing, plantation, caretaking and lease management while you are away.</p></div>
+              </li>
+            </ul>
+            <a href="#process" class="btn btn--gold magnetic why__cta"><span>See how buying works</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROCESS ================= -->
+    <div class="divider" aria-hidden="true"><svg class="divider__topo" viewBox="0 0 1440 64" preserveAspectRatio="none"><path class="t1" d="M0 18 Q120 0 240 18 Q360 36 480 18 Q600 0 720 18 Q840 36 960 18 Q1080 0 1200 18 Q1320 36 1440 18"/><path class="t2" d="M0 32 Q120 54 240 32 Q360 10 480 32 Q600 54 720 32 Q840 10 960 32 Q1080 54 1200 32 Q1320 10 1440 32"/><path class="t2g" d="M0 32 Q120 54 240 32 Q360 10 480 32 Q600 54 720 32 Q840 10 960 32 Q1080 54 1200 32 Q1320 10 1440 32"/><path class="t3" d="M0 46 Q120 28 240 46 Q360 64 480 46 Q600 28 720 46 Q840 64 960 46 Q1080 28 1200 46 Q1320 64 1440 46"/></svg><span class="divider__emblem"><img src="assets/img/logo-icon.png" alt="" /></span></div>
+
+    <section class="process section section--dark" id="process">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow eyebrow--light" data-reveal><span class="eyebrow__line"></span>Ecosystem &amp; How It Works</p>
+            <h2 class="section-title section-title--light" data-split>How It Works &amp; <em>Income Streams</em></h2>
+          </div>
+          <p class="section-lead section-lead--light" data-reveal>From land acquisition to level growth, reward bonuses, and transparent policies — explore how our platform works.</p>
+        </div>
+
+        <!-- Process Tabs Navigation -->
+        <div class="process-tabs" id="processTabs" role="tablist" aria-label="How it works navigation" data-reveal>
+          <button class="process-tab is-active" data-tab="flow" role="tab" aria-selected="true">
+            <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            <span>01. Land Process</span>
+          </button>
+          <button class="process-tab" data-tab="level" role="tab" aria-selected="false">
+            <svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><polyline points="17 11 19 13 23 9"/></svg>
+            <span>02. Level Income</span>
+          </button>
+          <button class="process-tab" data-tab="reward" role="tab" aria-selected="false">
+            <svg viewBox="0 0 24 24"><path d="M12 15l-2 5 3-2 3 2-2-5 4-3.5h-5L12 5l-1.5 4.5h-5z"/><circle cx="12" cy="12" r="9"/></svg>
+            <span>03. Reward Income</span>
+          </button>
+          <button class="process-tab" data-tab="benefits" role="tab" aria-selected="false">
+            <svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            <span>04. Benefits &amp; Wallets</span>
+          </button>
+          <button class="process-tab" data-tab="policy" role="tab" aria-selected="false">
+            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <span>05. Policy &amp; Rules</span>
+          </button>
+        </div>
+
+        <!-- TAB PANELS -->
+        <div class="process-panels">
+
+          <!-- TAB 1: LAND PROCESS (Flow) -->
+          <div class="process-panel is-active" id="tab-flow">
+            <div class="process__grid">
+              <div class="process__aside">
+                <h3 class="panel-subtitle">From First Look <em>To Your Own Gate</em></h3>
+                <p class="section-lead section-lead--light">A clear five-step path. Most buyers go from first call to registration in 3–6 weeks.</p>
+                <figure class="process__img reveal-img"><img src="assets/img/luxury-ranch.jpg" alt="Fenced paddock leading to a stone manor" loading="lazy" data-speed="-0.06" /></figure>
+              </div>
+              <ol class="steps" id="steps">
+                <li class="step"><span class="step__num">01</span><div><h3>Discover</h3><p>Browse listings, watch aerial tours and shortlist properties. Tell us your use — farming, homestead, retreat or long-term holding.</p></div></li>
+                <li class="step"><span class="step__num">02</span><div><h3>Visit the land</h3><p>We schedule a guided site visit. Walk the boundaries, meet neighbours, see water sources and road access in person.</p></div></li>
+                <li class="step"><span class="step__num">03</span><div><h3>Verify everything</h3><p>Receive the title report, survey map and utility documents. Have your own lawyer review them — we encourage it.</p></div></li>
+                <li class="step"><span class="step__num">04</span><div><h3>Agree &amp; register</h3><p>Sign a clear sale agreement with an itemised cost sheet, then complete registration at the local land office.</p></div></li>
+                <li class="step"><span class="step__num">05</span><div><h3>Take the keys</h3><p>Physical handover with boundary walk-through. Optional land care services to fence, plant or lease your acres.</p></div></li>
+                <span class="steps__line" aria-hidden="true"><i id="stepsLine"></i></span>
+              </ol>
+            </div>
+          </div>
+
+          <!-- TAB 2: LEVEL INCOME -->
+          <div class="process-panel" id="tab-level" hidden>
+            <div class="level-income-block">
+              <div class="level-income-head">
+                <div>
+                  <span class="level-badge">Level Income Model</span>
+                  <h3 class="panel-subtitle">Build Your Network. <em>Grow Together.</em></h3>
+                  <p class="section-lead section-lead--light">Earn consistent level commissions as your team and network expand across 5 depth levels.</p>
+                </div>
+                <div class="level-notice">
+                  <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                  <span>Every level income will be divided by <strong>30 Calendar Days</strong></span>
+                </div>
+              </div>
+
+              <div class="level-cards">
+                <!-- Level 1 -->
+                <div class="level-card">
+                  <div class="level-card__header">
+                    <span class="level-card__num">Level 1</span>
+                    <span class="level-card__pct">3%</span>
+                  </div>
+                  <div class="level-card__body">
+                    <span class="level-card__badge--free">No Conditions Apply</span>
+                    <div class="level-card__meta">
+                      <div><strong>Direct Bookings:</strong> <span>None required</span></div>
+                      <div><strong>Team Business:</strong> <span>Instant eligibility</span></div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Level 2 -->
+                <div class="level-card">
+                  <div class="level-card__header">
+                    <span class="level-card__num">Level 2</span>
+                    <span class="level-card__pct">2%</span>
+                  </div>
+                  <div class="level-card__body">
+                    <div class="level-card__meta">
+                      <div><strong>Direct Bookings:</strong> <span>2 Direct Club Bookings</span></div>
+                      <div><strong>Team Business:</strong> <span>$6,000</span></div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Level 3 -->
+                <div class="level-card">
+                  <div class="level-card__header">
+                    <span class="level-card__num">Level 3</span>
+                    <span class="level-card__pct">1%</span>
+                  </div>
+                  <div class="level-card__body">
+                    <div class="level-card__meta">
+                      <div><strong>Direct Bookings:</strong> <span>3 Direct Club Bookings</span></div>
+                      <div><strong>Team Business:</strong> <span>+$12,000</span></div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Level 4 -->
+                <div class="level-card">
+                  <div class="level-card__header">
+                    <span class="level-card__num">Level 4</span>
+                    <span class="level-card__pct">0.5%</span>
+                  </div>
+                  <div class="level-card__body">
+                    <div class="level-card__meta">
+                      <div><strong>Direct Bookings:</strong> <span>4 Direct Club Bookings</span></div>
+                      <div><strong>Team Business:</strong> <span>+$24,000</span></div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Level 5 -->
+                <div class="level-card">
+                  <div class="level-card__header">
+                    <span class="level-card__num">Level 5</span>
+                    <span class="level-card__pct">0.5%</span>
+                  </div>
+                  <div class="level-card__body">
+                    <div class="level-card__meta">
+                      <div><strong>Direct Bookings:</strong> <span>5 Direct Club Bookings</span></div>
+                      <div><strong>Team Business:</strong> <span>+$48,000</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB 3: REWARD INCOME -->
+          <div class="process-panel" id="tab-reward" hidden>
+            <div class="reward-block">
+              <div class="reward-head">
+                <span class="level-badge">Reward Income</span>
+                <h3 class="panel-subtitle">Achieve. Explore. <em>Be Rewarded.</em></h3>
+                <p class="section-lead section-lead--light">Travel More, Live Bigger. Reach milestones and unlock luxury trips, gold, and gadgets.</p>
+              </div>
+
+              <div class="reward-grid">
+                <!-- Reward 1 -->
+                <div class="reward-card">
+                  <div class="reward-card__icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M8 13h8M8 17h8"/></svg></div>
+                  <span class="reward-card__lvl">Level 1 Reward</span>
+                  <h4 class="reward-card__title">North India Trip (3N/4D)</h4>
+                  <p class="reward-card__desc">Experience the beauty of the Himalayas, spiritual destinations and iconic places in North India.</p>
+                  <div class="reward-card__req"><span>Requirement:</span> Min. 1 direct club booking</div>
+                </div>
+
+                <!-- Reward 2 -->
+                <div class="reward-card">
+                  <div class="reward-card__icon"><svg viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg></div>
+                  <span class="reward-card__lvl">Level 2 Reward</span>
+                  <h4 class="reward-card__title">Brand New Tablet (Tab)</h4>
+                  <p class="reward-card__desc">Premium tablet device for work &amp; entertainment.</p>
+                  <div class="reward-card__val">Worth ₹30,000/-</div>
+                </div>
+
+                <!-- Reward 3 -->
+                <div class="reward-card reward-card--featured">
+                  <span class="reward-card__tag">Popular</span>
+                  <div class="reward-card__icon"><svg viewBox="0 0 24 24"><path d="M17.8 19.2L16 11l3.5-3.5C21 6 21.5 4 21 3.5c-.5-.5-2.5 0-4 1.5L13.5 8.5 5.3 6.7c-.5-.1-1.1.1-1.4.6l-.7.8 4.7 3.6-3 3-2.1-.7c-.4-.1-.8.1-1 .4l-.3.4 3.2 2.2 2.2 3.2.4-.3c.3-.2.5-.6.4-1l-.7-2.1 3-3 3.6 4.7.8-.7c.5-.3.7-.9.6-1.4z"/></svg></div>
+                  <span class="reward-card__lvl">Level 3 Reward</span>
+                  <h4 class="reward-card__title">International Trip (4N/5D)</h4>
+                  <p class="reward-card__desc">All-inclusive exotic international holiday getaway for top performers.</p>
+                  <div class="reward-card__val">4 Nights / 5 Days Flight &amp; Hotel</div>
+                </div>
+
+                <!-- Reward 4 -->
+                <div class="reward-card">
+                  <div class="reward-card__icon"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+                  <span class="reward-card__lvl">Level 4 Reward</span>
+                  <h4 class="reward-card__title">Gold Bullion (5 Grams)</h4>
+                  <p class="reward-card__desc">Pure 24K 999.9 Fine Gold Bar as a permanent asset store.</p>
+                  <div class="reward-card__val">5 Grams 24K Gold</div>
+                </div>
+
+                <!-- Reward 5 -->
+                <div class="reward-card reward-card--gold">
+                  <div class="reward-card__icon"><svg viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="3"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg></div>
+                  <span class="reward-card__lvl">Level 5 Reward</span>
+                  <h4 class="reward-card__title">Apple iPhone</h4>
+                  <p class="reward-card__desc">Top tier flagship smartphone for pinnacle achievement.</p>
+                  <div class="reward-card__val">Worth ₹1.5 Lakhs</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB 4: PLATFORM BENEFITS -->
+          <div class="process-panel" id="tab-benefits" hidden>
+            <div class="benefits-block">
+              <div class="benefits-head">
+                <span class="level-badge">Platform Benefits</span>
+                <h3 class="panel-subtitle">Generate Multiple <em>Income Streams</em></h3>
+                <p class="section-lead section-lead--light">Secure · Transparent · Trusted — Maximize your returns with 4 distinct profit channels.</p>
+              </div>
+
+              <div class="benefits-grid">
+                <div class="benefit-card">
+                  <div class="benefit-card__num">01</div>
+                  <h4>Weekly Profit</h4>
+                  <p>Earn consistent weekly profit returns up to 100-200 weeks on your active plan.</p>
+                </div>
+                <div class="benefit-card">
+                  <div class="benefit-card__num">02</div>
+                  <h4>Direct Referral</h4>
+                  <p>Earn 2% instant referral commission by directly introducing new club bookings.</p>
+                </div>
+                <div class="benefit-card">
+                  <div class="benefit-card__num">03</div>
+                  <h4>Level Income</h4>
+                  <p>Build a strong community network and unlock up to 5 levels of passive team commissions.</p>
+                </div>
+                <div class="benefit-card">
+                  <div class="benefit-card__num">04</div>
+                  <h4>4X Growth</h4>
+                  <p>Multiply your total income potential up to 4X capital return.</p>
+                </div>
+              </div>
+
+              <!-- Web3 Wallets Banner -->
+              <div class="wallets-box">
+                <div class="wallets-box__text">
+                  <h4>Supported Web3 Wallets</h4>
+                  <p>Connect and transact seamlessly with all major decentralized Web3 wallets.</p>
+                </div>
+                <div class="wallets-list">
+                  <span class="wallet-chip">MetaMask</span>
+                  <span class="wallet-chip">Trust Wallet</span>
+                  <span class="wallet-chip">TokenPocket</span>
+                  <span class="wallet-chip">SafePal</span>
+                  <span class="wallet-chip wallet-chip--all">All Decentralized Wallets Supported</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB 5: PLATFORM POLICY -->
+          <div class="process-panel" id="tab-policy" hidden>
+            <div class="policy-block">
+              <div class="policy-head">
+                <span class="level-badge">Platform Policy &amp; Rules</span>
+                <h3 class="panel-subtitle">Simple Rules. <em>A Safer Journey.</em></h3>
+                <p class="section-lead section-lead--light">Built with transparent policies to ensure a safe, reliable, and trustworthy experience for every member.</p>
+              </div>
+
+              <div class="policy-list">
+                <div class="policy-item">
+                  <div class="policy-item__num">01</div>
+                  <div class="policy-item__content">
+                    <h4>100% Free Registration</h4>
+                    <p>Create your account with zero registration charges or hidden sign-up fees.</p>
+                  </div>
+                </div>
+
+                <div class="policy-item">
+                  <div class="policy-item__num">02</div>
+                  <div class="policy-item__content">
+                    <h4>Deposit Currency: USDT (BEP-20 ONLY)</h4>
+                    <p>All deposits must be executed in USDT stablecoin via the Binance Smart Chain (BEP-20) network.</p>
+                  </div>
+                </div>
+
+                <div class="policy-item">
+                  <div class="policy-item__num">03</div>
+                  <div class="policy-item__content">
+                    <h4>Minimum Withdrawal: 10 USDT</h4>
+                    <p>Quick, accessible payout threshold starting at a minimum of 10 USDT (BEP-20 Only).</p>
+                  </div>
+                </div>
+
+                <div class="policy-item">
+                  <div class="policy-item__num">04</div>
+                  <div class="policy-item__content">
+                    <h4>Withdrawal Fee &amp; P2P</h4>
+                    <p>Standard withdrawal fee is 10%. Daily P2P transactions enjoy a reduced 5% fee structure.</p>
+                  </div>
+                </div>
+
+                <div class="policy-item">
+                  <div class="policy-item__num">05</div>
+                  <div class="policy-item__content">
+                    <h4>Weekly Profit Withdrawal Timing</h4>
+                    <p>Withdrawal window opens every <strong>Monday 6:00 AM to 6:00 PM</strong> (INR / USD).</p>
+                  </div>
+                </div>
+
+                <div class="policy-item">
+                  <div class="policy-item__num">06</div>
+                  <div class="policy-item__content">
+                    <h4>Top-Up Requirement</h4>
+                    <p>If your total earnings reach the capping limit, a re-top-up is required to continue earning profits.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Policy Pillars -->
+              <div class="policy-pillars">
+                <div><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><strong>Secure Transactions</strong><span>Safe &amp; Protected</span></div>
+                <div><svg viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg><strong>Instant Processing</strong><span>Fast &amp; Reliable</span></div>
+                <div><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><strong>AI Driven Tech</strong><span>Intelligent &amp; Advanced</span></div>
+                <div><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 2v20M2 12h20"/></svg><strong>Multi-Currency</strong><span>Flexible &amp; Convenient</span></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    
+
+
+    <!-- ================= BUYER PACKAGES ================= -->
+    <div class="divider" aria-hidden="true"><svg class="divider__topo" viewBox="0 0 1440 64" preserveAspectRatio="none"><path class="t1" d="M0 18 Q120 0 240 18 Q360 36 480 18 Q600 0 720 18 Q840 36 960 18 Q1080 0 1200 18 Q1320 36 1440 18"/><path class="t2" d="M0 32 Q120 54 240 32 Q360 10 480 32 Q600 54 720 32 Q840 10 960 32 Q1080 54 1200 32 Q1320 10 1440 32"/><path class="t2g" d="M0 32 Q120 54 240 32 Q360 10 480 32 Q600 54 720 32 Q840 10 960 32 Q1080 54 1200 32 Q1320 10 1440 32"/><path class="t3" d="M0 46 Q120 28 240 46 Q360 64 480 46 Q600 28 720 46 Q840 64 960 46 Q1080 28 1200 46 Q1320 64 1440 46"/></svg><span class="divider__emblem"><img src="assets/img/logo-icon.png" alt="" /></span></div>
+
+    <section class="tiers section" id="packages">
+      <div class="container">
+        <div class="section-head tiers__head">
+          <div>
+            <p class="eyebrow eyebrow--light" data-reveal><span class="eyebrow__line"></span>Buyer Packages &amp; Membership Plans</p>
+            <h2 class="section-title section-title--light" data-split>Basic, Standard <em>&amp; Premium.</em></h2>
+          </div>
+          <p class="section-lead section-lead--light" data-reveal>Explore our official club membership packages — featuring weekly profit funds, post-dated cheques, legal agreements, and physical land surety guarantees.</p>
+        </div>
+
+        <!-- BASE PACKAGES (Basic & Standard) -->
+        <div class="tiers__grid tiers__grid--base">
+            <!-- BASIC MEMBERSHIP -->
+            <article class="tier tier--basic" id="tier-basic" data-reveal>
+              <span class="tier__badge">Basic Membership</span>
+              <div class="tier__crest"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 6C14 14 10 22 10 29a14 14 0 0 0 28 0c0-7-4-15-14-23z"/><path d="M24 18v22"/></svg></div>
+              <h3 class="tier__name">Basic Membership</h3>
+              <p class="tier__tag">Entry Level Investment Plan</p>
+              <div class="tier__fee">
+                <strong>$100 – $4,900</strong>
+                <span>Multiple of $100</span>
+              </div>
+              <div class="tier__profit-banner">
+                <span class="tier__pct">2% Profit Fund</span>
+                <span class="tier__dur">Up to 100 Weeks</span>
+              </div>
+              <ul class="tier__list">
+                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><strong>2% Weekly Profit Fund</strong> payout</span></li>
+                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Flexible entry from <strong>$100 to $4,900</strong></span></li>
+                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><strong>100 Weeks</strong> total profit cycle</span></li>
+                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>100% Free registration &amp; zero hidden fees</span></li>
+                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Weekly profit withdrawal (Every Monday)</span></li>
+              </ul>
+              <a href="#contact" class="btn tier__btn" data-tier="Basic Membership"><span>Choose Basic ($100 - $4,900)</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </article>
+
+            <!-- STANDARD PACKAGE -->
+            <article class="tier tier--standard" id="tier-standard" data-reveal>
+              <span class="tier__badge">Cheque &amp; Agreement Provided</span>
+              <div class="tier__crest"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 5l15 6v11c0 10-6 17-15 21C15 39 9 32 9 22V11z"/><path d="M17 24l5 5 9-10"/></svg></div>
+              <h3 class="tier__name">Standard Package</h3>
+              <p class="tier__tag">Secured Investment Plan</p>
+              <div class="tier__fee">
+                <strong>$5,000 – $14,500</strong>
+                <span>Multiple of $500</span>
+              </div>
+              <div class="tier__profit-banner">
+                <span class="tier__pct">1% Profit Fund</span>
+                <span class="tier__dur">Up to 200 Weeks</span>
+              </div>
+              <div class="tier__guarantees">
+                <div class="guarantee-card">
+                  <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                  <strong>COMPANY GIVES A CHEQUE</strong>
+                  <span>Post-dated Security Cheque</span>
+                </div>
+                <div class="guarantee-card">
+                  <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+                  <strong>AGREEMENT PROVIDED</strong>
+                  <span>Legal Written Agreement</span>
+                </div>
+              </div>
+              <ul class="tier__list">
+                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><strong>1% Weekly Profit Fund</strong> up to 200 Weeks</span></li>
+                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Real asset backed farmland ownership</span></li>
+                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Secure, transparent process with weekly returns</span></li>
+                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Create wealth for generations</span></li>
+              </ul>
+              <a href="#contact" class="btn tier__btn" data-tier="Standard Package"><span>Choose Standard ($5k - $14.5k)</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </article>
+        </div>
+
+        <!-- LAND SURETY BANNER -->
+        <div class="land-surety-banner" data-reveal>
+          <div class="land-surety-banner__content">
+            <span class="surety-chip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg>LAND SURETY GUARANTEE</span>
+            <h3>Club Membership &amp; Land Surety Terms</h3>
+            <p>All Premium Club Memberships ($15,000 &amp; Above) include physical farmland security, 1% weekly profit payout for 200 weeks, full principal return after 200 weeks, and property surety deed returned after 150 weeks.</p>
+          </div>
+          <div class="land-surety-banner__stats">
+          <div class="surety-stat"><span class="surety-stat__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20l5-9 4 6 3-4 6 7z"/><circle cx="17" cy="6" r="2"/></svg></span><strong>5.5 Quintas</strong><span>(6,000 sq ft) Farmland Unit</span></div>
+          <div class="surety-stat"><span class="surety-stat__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 18l5-6 4 3 7-9"/><path d="M15 6h5v5"/></svg></span><strong>1% Weekly</strong><span>Profit for 200 Weeks</span></div>
+          <div class="surety-stat"><span class="surety-stat__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></span><strong>150 Weeks</strong><span>Property Surety Returned</span></div>
+          <div class="surety-stat"><span class="surety-stat__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M9.5 9.5h4a1.8 1.8 0 010 3.6h-3a1.8 1.8 0 000 3.6H15"/></svg></span><strong>200 Weeks</strong><span>Full Principal Returned</span></div>
+        </div>
+        <div class="surety-timeline" aria-hidden="true">
+          <div class="surety-timeline__bar"><i></i></div>
+          <ul>
+            <li><b>Week 0</b><span>Join &amp; start earning</span></li>
+            <li style="--at:75%"><b>Week 150</b><span>Surety deed returned</span></li>
+            <li style="--at:100%"><b>Week 200</b><span>Full principal returned</span></li>
+          </ul>
+        </div>
+        </div>
+
+        <div class="tiers__label" data-reveal><span></span><p>Premium Club Memberships <em>Silver · Gold · Diamond</em></p><span></span></div>
+
+        <!-- PREMIUM PACKAGES (Silver, Gold, Diamond) -->
+        <div class="tiers__grid">
+            <!-- SILVER CLUB -->
+            <article class="tier tier--silver" id="tier-silver" data-reveal>
+              <span class="tier__badge">Silver Club</span>
+              <div class="tier__crest"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 34l-3-18 10 8 9-14 9 14 10-8-3 18z"/><path d="M8 38h32"/></svg></div>
+              <h3 class="tier__name">Silver Club</h3>
+              <p class="tier__tag">Premium Land Surety Tier</p>
+              <div class="tier__fee">
+                <strong>$15,000 – $29,000</strong>
+                <span>Multiple of $1,000</span>
+              </div>
+              <div class="tier__profit-banner">
+                <span class="tier__pct">1% Profit Fund</span>
+                <span class="tier__dur">Up to 200 Weeks</span>
+              </div>
+              <ul class="tier__list">
+                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><strong>Land Surety:</strong> 5.5 Quintas (6,000 sq ft)</span></li>
+                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><strong>Full Principal Returned</strong> after 200 Weeks</span></li>
+                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><strong>Property Surety Returned</strong> after 150 Weeks</span></li>
+                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Premium investment opportunities &amp; benefits</span></li>
+                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Higher returns with 1% weekly profit payout</span></li>
+              </ul>
+              <a href="#contact" class="btn tier__btn" data-tier="Silver Club"><span>Choose Silver ($15k - $29k)</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </article>
+
+            <!-- GOLD CLUB -->
+            <article class="tier tier--gold is-rec" id="tier-gold" data-reveal>
+              <span class="tier__badge">Recommended</span>
+              <div class="tier__crest"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 34l-3-18 10 8 9-14 9 14 10-8-3 18z"/><path d="M8 38h32"/></svg></div>
+              <h3 class="tier__name">Gold Club</h3>
+              <p class="tier__tag">Priority Network &amp; Land Surety</p>
+              <div class="tier__fee">
+                <strong>$30,000 – $44,000</strong>
+                <span>Multiple of $1,000</span>
+              </div>
+              <div class="tier__profit-banner">
+                <span class="tier__pct">1% Profit Fund</span>
+                <span class="tier__dur">Up to 200 Weeks</span>
+              </div>
+              <ul class="tier__list">
+                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><strong>Land Surety:</strong> 5.5 Quintas (6,000 sq ft)</span></li>
+                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><strong>Full Principal Returned</strong> after 200 Weeks</span></li>
+                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><strong>Property Surety Returned</strong> after 150 Weeks</span></li>
+                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Priority project allocation &amp; exclusive network</span></li>
+                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Enhanced returns &amp; priority advisor support</span></li>
+              </ul>
+              <a href="#contact" class="btn tier__btn" data-tier="Gold Club"><span>Choose Gold ($30k - $44k)</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </article>
+
+            <!-- DIAMOND CLUB -->
+            <article class="tier tier--diamond" id="tier-diamond" data-reveal>
+              <span class="tier__badge">Diamond Club</span>
+              <div class="tier__crest"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M14 8h20l8 11-18 21L6 19z"/><path d="M6 19h36M18 8l-4 11 10 21 10-21-4-11"/></svg></div>
+              <h3 class="tier__name">Diamond Club</h3>
+              <p class="tier__tag">Elite Tier &amp; Maximum Growth</p>
+              <div class="tier__fee">
+                <strong>$45,000 &amp; Above</strong>
+                <span>Multiple of $1,000</span>
+              </div>
+              <div class="tier__profit-banner">
+                <span class="tier__pct">1% Profit Fund</span>
+                <span class="tier__dur">Up to 200 Weeks</span>
+              </div>
+              <ul class="tier__list">
+                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><strong>Land Surety Backed:</strong> Farmland guarantee</span></li>
+                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><strong>Full Principal Returned</strong> after 200 Weeks</span></li>
+                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><strong>Property Surety Returned</strong> after 150 Weeks</span></li>
+                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Premium access &amp; elite investor community</span></li>
+                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Maximum growth potential &amp; 4X cap multiplier</span></li>
+              </ul>
+              <a href="#contact" class="btn tier__btn" data-tier="Diamond Club"><span>Choose Diamond ($45k+)</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </article>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ================= TESTIMONIALS ================= -->
+    <div class="divider" aria-hidden="true"><svg class="divider__topo" viewBox="0 0 1440 64" preserveAspectRatio="none"><path class="t1" d="M0 18 Q120 0 240 18 Q360 36 480 18 Q600 0 720 18 Q840 36 960 18 Q1080 0 1200 18 Q1320 36 1440 18"/><path class="t2" d="M0 32 Q120 54 240 32 Q360 10 480 32 Q600 54 720 32 Q840 10 960 32 Q1080 54 1200 32 Q1320 10 1440 32"/><path class="t2g" d="M0 32 Q120 54 240 32 Q360 10 480 32 Q600 54 720 32 Q840 10 960 32 Q1080 54 1200 32 Q1320 10 1440 32"/><path class="t3" d="M0 46 Q120 28 240 46 Q360 64 480 46 Q600 28 720 46 Q840 64 960 46 Q1080 28 1200 46 Q1320 64 1440 46"/></svg><span class="divider__emblem"><img src="assets/img/logo-icon.png" alt="" /></span></div>
+
+    <section class="testimonials section section--dark" id="stories">
+      <div class="testimonials__bg"><img src="assets/img/mountain-house-hd.jpg" alt="" loading="lazy" data-speed="-0.12" /></div>
+      <div class="container testimonials__inner">
+        <p class="eyebrow eyebrow--light" data-reveal><span class="eyebrow__line"></span>Owner stories</p>
+        <div class="quotes" id="quotes">
+          <!-- SAMPLE CONTENT: replace with real, permission-granted client testimonials before going live -->
+          <figure class="quote is-active">
+            <blockquote>“We walked three properties in one afternoon and every document was already in the folder. It was the calmest big decision we've ever made.”</blockquote>
+            <figcaption><strong>Sample Client</strong><span>Homestead buyer</span></figcaption>
+          </figure>
+          <figure class="quote">
+            <blockquote>“The drone survey matched the boundary stones to the metre. Our lawyer said it was the cleanest land file he'd reviewed all year.”</blockquote>
+            <figcaption><strong>Sample Client</strong><span>Farmland buyer</span></figcaption>
+          </figure>
+          <figure class="quote">
+            <blockquote>“They didn't push. They showed us the well test, the road easement and the neighbours — then let us take our time.”</blockquote>
+            <figcaption><strong>Sample Client</strong><span>Ranch buyer</span></figcaption>
+          </figure>
+        </div>
+        <div class="quotes__nav">
+          <button class="round-btn" id="quotePrev" aria-label="Previous story"><svg viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button>
+          <span class="quotes__count"><b id="quoteIdx">01</b> / 03</span>
+          <button class="round-btn" id="quoteNext" aria-label="Next story"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FAQ ================= -->
+    <div class="divider" aria-hidden="true"><svg class="divider__topo" viewBox="0 0 1440 64" preserveAspectRatio="none"><path class="t1" d="M0 18 Q120 0 240 18 Q360 36 480 18 Q600 0 720 18 Q840 36 960 18 Q1080 0 1200 18 Q1320 36 1440 18"/><path class="t2" d="M0 32 Q120 54 240 32 Q360 10 480 32 Q600 54 720 32 Q840 10 960 32 Q1080 54 1200 32 Q1320 10 1440 32"/><path class="t2g" d="M0 32 Q120 54 240 32 Q360 10 480 32 Q600 54 720 32 Q840 10 960 32 Q1080 54 1200 32 Q1320 10 1440 32"/><path class="t3" d="M0 46 Q120 28 240 46 Q360 64 480 46 Q600 28 720 46 Q840 64 960 46 Q1080 28 1200 46 Q1320 64 1440 46"/></svg><span class="divider__emblem"><img src="assets/img/logo-icon.png" alt="" /></span></div>
+
+    <section class="faq section section--cream" id="faq">
+      <div class="container faq__grid">
+        <div>
+          <p class="eyebrow" data-reveal><span class="eyebrow__line"></span>Questions</p>
+          <h2 class="section-title" data-split>Good questions, <em>straight answers.</em></h2>
+          <p class="section-lead" data-reveal>Can't find yours? <a href="#contact" class="text-link">Ask a land advisor.</a></p>
+          <div class="advisor" data-reveal>
+            <div class="advisor__top">
+              <span class="advisor__emblem"><img src="assets/img/logo-icon.png" alt="" /></span>
+              <div>
+                <strong>Talk to a land advisor</strong>
+                <span class="advisor__status"><i></i>Usually replies within 1 business day</span>
+              </div>
+            </div>
+            <p>Local experts who walk every plot themselves. Ask about titles, water, financing or a specific listing.</p>
+            <div class="advisor__actions">
+              <a href="#contact" class="btn btn--gold btn--sm"><span>Book a visit</span></a>
+              <a href="tel:+10000000000" class="btn btn--glass btn--sm"><span>Call us</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="faq__side">
+          <label class="faq__search">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+            <input type="search" id="faqSearch" placeholder="Search questions…" aria-label="Search questions" autocomplete="off" />
+            <span class="faq__count" id="faqCount">5 questions</span>
+          </label>
+          <div class="accordion" id="accordion">
+          <details class="acc" open>
+            <summary><span class="acc__ico"><svg viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></span><span class="acc__q">Can I visit a property before committing?</span><i></i></summary>
+            <div class="acc__body"><p>Always. We strongly recommend at least one guided visit. Book a slot through the form below and we'll coordinate timing, directions and a local expert to meet you on site.</p></div>
+          </details>
+          <details class="acc">
+            <summary><span class="acc__ico"><svg viewBox="0 0 24 24"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M10 13h6M10 17h6"/></svg></span><span class="acc__q">What documents will I receive?</span><i></i></summary>
+            <div class="acc__body"><p>A title report, survey/plat map with GPS corners, tax records, any easements or encumbrances, and utility documentation (water, power, road access). You're encouraged to have your own lawyer review everything.</p></div>
+          </details>
+          <details class="acc">
+            <summary><span class="acc__ico"><svg viewBox="0 0 24 24"><circle cx="9" cy="9" r="5"/><path d="M14.5 6.5a5 5 0 1 1-4 9.5"/></svg></span><span class="acc__q">Do you help with financing?</span><i></i></summary>
+            <div class="acc__body"><p>We can introduce you to lenders who specialise in land and agricultural loans. Rates and approval are set by the lender.</p></div>
+          </details>
+          <details class="acc">
+            <summary><span class="acc__ico"><svg viewBox="0 0 24 24"><path d="M12 22V12M12 12c0-4 3-7 8-7 0 5-3 7-8 7zM12 15c0-3-2.5-5.5-7-5.5 0 4 2.5 5.5 7 5.5z"/></svg></span><span class="acc__q">Can someone manage the land after I buy?</span><i></i></summary>
+            <div class="acc__body"><p>Yes. Our optional land-care service covers fencing, plantation, caretaking and finding vetted tenants if you'd like to lease the land to local farmers.</p></div>
+          </details>
+          <details class="acc">
+            <summary><span class="acc__ico"><svg viewBox="0 0 24 24"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"/><path d="M9 8h6M9 12h6"/></svg></span><span class="acc__q">Are there any hidden fees?</span><i></i></summary>
+            <div class="acc__body"><p>No. Before you sign, you get an itemised sheet showing the property price, registration charges, taxes and any service fees. What's on the sheet is what you pay.</p></div>
+          </details>
+        </div>
+          <p class="faq__none" id="faqNone" hidden>No matching questions. <a href="#contact" class="text-link">Ask an advisor directly.</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <div class="divider" aria-hidden="true"><svg class="divider__topo" viewBox="0 0 1440 64" preserveAspectRatio="none"><path class="t1" d="M0 18 Q120 0 240 18 Q360 36 480 18 Q600 0 720 18 Q840 36 960 18 Q1080 0 1200 18 Q1320 36 1440 18"/><path class="t2" d="M0 32 Q120 54 240 32 Q360 10 480 32 Q600 54 720 32 Q840 10 960 32 Q1080 54 1200 32 Q1320 10 1440 32"/><path class="t2g" d="M0 32 Q120 54 240 32 Q360 10 480 32 Q600 54 720 32 Q840 10 960 32 Q1080 54 1200 32 Q1320 10 1440 32"/><path class="t3" d="M0 46 Q120 28 240 46 Q360 64 480 46 Q600 28 720 46 Q840 64 960 46 Q1080 28 1200 46 Q1320 64 1440 46"/></svg><span class="divider__emblem"><img src="assets/img/logo-icon.png" alt="" /></span></div>
+
+    <section class="contact" id="contact">
+      <div class="contact__media"><img src="assets/img/red-barn-hd.jpg" alt="" loading="lazy" data-speed="-0.1" /></div>
+      <div class="container contact__grid">
+        <div class="contact__info">
+          <p class="eyebrow eyebrow--light" data-reveal><span class="eyebrow__line"></span>Book a site visit</p>
+          <h2 class="section-title section-title--light" data-split>Come walk <em>the land.</em></h2>
+          <p class="section-lead section-lead--light" data-reveal>Pick a property and a date. A land advisor will confirm within one business day.</p>
+          <ul class="contact__list" data-reveal>
+            <li><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><a href="tel:+10000000000">+1 (000) 000-0000</a></li>
+            <li><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a href="mailto:contact@sriproperties.biz">contact@sriproperties.biz</a></li>
+            <li><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><span>Your office address, City, State</span></li>
+          </ul>
+        </div>
+
+        <form class="form" id="visitForm" novalidate data-reveal>
+          <div class="form__body">
+            <div class="form__head">
+              <div>
+                <h3>Schedule your visit</h3>
+                <p>Takes under a minute. We'll confirm by phone.</p>
+              </div>
+              <span class="form__pill"><i></i>Free · No obligation</span>
+            </div>
+            <div class="form__row">
+              <div class="field">
+                <input id="fName" name="name" type="text" placeholder=" " autocomplete="name" required />
+                <label for="fName">Full name</label>
+                <small class="field__err">Please enter your name.</small>
+              </div>
+              <div class="field">
+                <input id="fPhone" name="phone" type="tel" placeholder=" " autocomplete="tel" required pattern="[0-9+()\-\s]{7,}" />
+                <label for="fPhone">Phone</label>
+                <small class="field__err">Please enter a valid phone number.</small>
+              </div>
+            </div>
+            <div class="field">
+              <input id="fEmail" name="email" type="email" placeholder=" " autocomplete="email" required />
+              <label for="fEmail">Email</label>
+              <small class="field__err">Please enter a valid email.</small>
+            </div>
+            <div class="form__row">
+              <div class="field field--select">
+                <select id="fProperty" name="property" required>
+                  <option value="" disabled selected hidden></option>
+                  <option value="Not sure yet">Not sure yet — advise me</option>
+                </select>
+                <label for="fProperty">Property of interest</label>
+                <small class="field__err">Please choose an option.</small>
+              </div>
+              <div class="field">
+                <input id="fDate" name="date" type="date" required />
+                <label for="fDate" class="is-static">Preferred visit date</label>
+                <small class="field__err">Please pick a future date.</small>
+              </div>
+            </div>
+            <div class="field">
+              <textarea id="fMsg" name="message" rows="3" placeholder=" "></textarea>
+              <label for="fMsg">Anything we should know? (optional)</label>
+            </div>
+            <label class="check">
+              <input type="checkbox" id="fConsent" required />
+              <span class="check__box"></span>
+              <span>I agree to be contacted about this enquiry.</span>
+            </label>
+            <button class="btn btn--gold btn--block form__submit magnetic" type="submit"><span>Request site visit</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          </div>
+          <div class="form__success" id="formSuccess" hidden>
+            <svg viewBox="0 0 52 52" class="tick" aria-hidden="true"><circle cx="26" cy="26" r="24"/><path d="M15 27l7 7 15-16"/></svg>
+            <h3>Request received!</h3>
+            <p id="successMsg">A land advisor will call you within one business day to confirm your visit.</p>
+            <button type="button" class="btn btn--ghost-light" id="formAgain"><span>Book another visit</span></button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer footer--modern">
+    <div class="container">
+      <div class="fcta">
+        <div class="fcta__text">
+          <span class="fcta__kicker"><i></i>Site visits open this week</span>
+          <h3>Ready to walk <em>your land?</em></h3>
+          <p>Book a guided visit and see the boundaries, water and road access in person.</p>
+        </div>
+        <div class="fcta__actions">
+          <a href="#contact" class="btn btn--gold magnetic"><span>Book a site visit</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a href="tel:+10000000000" class="btn btn--glass"><span>Call +1 (000) 000-0000</span></a>
+        </div>
+      </div>
+
+      <div class="fgrid">
+        <div class="fgrid__brand">
+          <a href="#home" class="logo logo--plate logo--plate-lg" aria-label="Sri Properties home"><img src="assets/img/logo.png" alt="Sri Properties — Land | Homes | A Better Tomorrow" class="logo__img" /></a>
+          <p>Verified farmland and country estates. Land you can walk, farm, build on and pass down.</p>
+          <div class="socials">
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z"/></svg></a>
+            <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10 9.5v5l4.5-2.5z"/></svg></a>
+            <a href="#" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7z"/><path d="M9 9.5c.5 2 2.5 4 4.5 4.5l1-1.2 2 .8-.4 1.6c-3.6.4-7.6-3.6-7.2-7.2L10.5 7.6l.8 2-1.3.9z"/></svg></a>
+          </div>
+        </div>
+        <nav class="fgrid__col" aria-label="Explore">
+          <h4>Explore</h4>
+          <a href="#properties">Properties</a><a href="#lifestyle">Lifestyles</a><a href="#aerial">Aerial tour</a>
+        </nav>
+        <nav class="fgrid__col" aria-label="Company">
+          <h4>Company</h4>
+          <a href="#about">About</a><a href="#process">How it works</a><a href="#faq">FAQ</a><a href="#contact">Contact</a>
+        </nav>
+        <div class="fgrid__col fgrid__news">
+          <h4>New listings, first</h4>
+          <p>Get fresh plots in your inbox before they go public.</p>
+          <form class="news" id="newsForm" novalidate>
+            <input type="email" placeholder="Your email" aria-label="Email for new listing alerts" required />
+            <button type="submit" aria-label="Subscribe"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          </form>
+          <small class="news__msg" id="newsMsg" aria-live="polite"></small>
+          <ul class="fcontact">
+            <li><span>Email</span>contact@sriproperties.biz</li>
+            <li><span>Office</span>Your office address, City</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="wm-art" id="wmArt" aria-hidden="true">
+        <span class="wm-art__fill">Sri <em>Properties</em></span>
+      </div>
+      <p class="wm-tag" aria-hidden="true">Land <i></i> Homes <i></i> A Better Tomorrow</p>
+
+      <div class="footer__bottom">
+        <span>© <span id="year"></span> Sri Properties. All rights reserved.</span>
+        <span>Listings and figures shown are illustrative. Verify all details independently before purchase.</span>
+        <a href="#home" class="to-top" aria-label="Back to top"><svg viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></svg></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= PROPERTY DRAWER ================= -->
+  <div class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawer__backdrop" data-close></div>
+    <aside class="drawer__panel" role="dialog" aria-modal="true" aria-labelledby="dTitle">
+      <button class="drawer__close round-btn" data-close aria-label="Close property details"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+      <div class="drawer__scroll" id="drawerScroll" data-lenis-prevent>
+        <div class="gallery">
+          <div class="gallery__main"><img id="dMainImg" src="" alt="" /></div>
+          <div class="gallery__thumbs" id="dThumbs"></div>
+        </div>
+        <div class="drawer__body">
+          <div class="drawer__head">
+            <span class="badge" id="dType"></span>
+            <h2 id="dTitle"></h2>
+            <p class="drawer__loc" id="dLoc"></p>
+          </div>
+          <div class="drawer__price"><strong id="dPrice"></strong><span id="dPerAcre"></span></div>
+          <div class="facts" id="dFacts"></div>
+          <p class="drawer__desc" id="dDesc"></p>
+          <h4 class="drawer__sub">Highlights</h4>
+          <ul class="amenities" id="dAmen"></ul>
+          <div class="drawer__cta">
+            <button class="btn btn--gold btn--block" id="dBook"><span>Book a visit to this property</span></button>
+            <div class="drawer__cta-row">
+              <button class="btn btn--outline" id="dSave"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7.5-4.6-9.5-9.4C1.2 8.3 3.4 5 6.8 5c2 0 3.6 1.1 5.2 3 1.6-1.9 3.2-3 5.2-3 3.4 0 5.6 3.3 4.3 6.6C19.5 16.4 12 21 12 21z"/></svg><span>Save</span></button>
+              <button class="btn btn--outline" id="dShare"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 14a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1M14 10a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg><span>Copy link</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
