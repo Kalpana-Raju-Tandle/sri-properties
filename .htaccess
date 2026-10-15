@@ -7,14 +7,20 @@
   RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 </IfModule>
 
-# 2. Browser Caching (HTML is not cached so updates appear immediately on mobile)
-<FilesMatch "\.(html|htm)$">
-  <IfModule mod_headers.c>
-    Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
+# 2. Browser & CDN Caching (HTML and root URL are never cached)
+<IfModule mod_headers.c>
+  Header set Cache-Control "no-cache, no-store, must-revalidate, max-age=0" "expr=%{CONTENT_TYPE} =~ m#text/html#"
+  Header set Pragma "no-cache" "expr=%{CONTENT_TYPE} =~ m#text/html#"
+  Header set Expires "0" "expr=%{CONTENT_TYPE} =~ m#text/html#"
+  Header set X-LiteSpeed-Cache-Control "no-cache" "expr=%{CONTENT_TYPE} =~ m#text/html#"
+
+  <FilesMatch "\.(html|htm)$">
+    Header set Cache-Control "no-cache, no-store, must-revalidate, max-age=0"
     Header set Pragma "no-cache"
     Header set Expires "0"
-  </IfModule>
-</FilesMatch>
+    Header set X-LiteSpeed-Cache-Control "no-cache"
+  </FilesMatch>
+</IfModule>
 
 <IfModule mod_expires.c>
   ExpiresActive On
