@@ -3874,7 +3874,8 @@ input[type="range"]::-moz-range-thumb { background: var(--gold-400); border-colo
 }
 
 /* ---- Hero offer: hanging gold seal + ribbon banner (top-right, swaying) ---- */
-.hero-tag { position: absolute; z-index: 3; top: calc(var(--header-h, 84px) + 34px); right: clamp(30px, 6vw, 90px); width: 190px; container-type: inline-size; transform-origin: 50% -34px; animation: tagSwing 5.5s ease-in-out infinite; filter: drop-shadow(0 26px 26px rgba(0, 0, 0, 0.6)); pointer-events: none; }
+.hero-tag { position: absolute; z-index: 3; top: calc(var(--header-h, 84px) + 34px); right: clamp(30px, 6vw, 90px); width: 190px; container-type: inline-size; transform-origin: 50% -34px; animation: tagSwing 5.5s ease-in-out infinite; filter: drop-shadow(0 26px 26px rgba(0, 0, 0, 0.6)); pointer-events: auto; cursor: pointer; text-decoration: none; display: block; transition: filter 0.4s var(--ease); }
+.hero-tag:hover { filter: drop-shadow(0 30px 34px rgba(0, 0, 0, 0.75)) drop-shadow(0 0 22px rgba(242, 192, 99, 0.5)); }
 .hero-tag__cord { position: absolute; left: 50%; top: -56px; width: 2px; height: 60px; margin-left: -1px; background: linear-gradient(#f6e2a3, #b98a2e); border-radius: 2px; }
 .hero-tag__ring { position: absolute; left: 50%; top: -8px; width: 24px; height: 24px; margin-left: -12px; border-radius: 50%; z-index: 3; background: conic-gradient(from 200deg, #fff1bf, #d99a2e, #fff1bf, #a9741c, #fff1bf); -webkit-mask: radial-gradient(circle, transparent 5px, #000 6px); mask: radial-gradient(circle, transparent 5px, #000 6px); }
 .hero-tag__seal { position: relative; width: 100%; aspect-ratio: 1; }
@@ -3893,6 +3894,20 @@ input[type="range"]::-moz-range-thumb { background: var(--gold-400); border-colo
 .hero-tag__banner b { font-family: var(--font-display); font-size: 12.5cqw; font-weight: 600; line-height: 1; }
 .hero-tag__banner span { display: flex; flex-direction: column; text-align: left; font-size: 4.3cqw; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; line-height: 1.25; }
 .hero-tag__banner em { font-style: normal; font-size: 3.5cqw; font-weight: 700; letter-spacing: 0.02em; text-transform: none; opacity: 0.8; }
+.hero-tag__cta-wrap { display: flex; justify-content: center; position: relative; z-index: 4; margin-top: 3.5cqw; }
+.hero-tag__cta {
+  display: inline-flex; align-items: center; justify-content: center; gap: 2.5cqw;
+  padding: 3cqw 9cqw; border-radius: 999px;
+  background: linear-gradient(135deg, #fff7d6 0%, #f2c063 45%, #d49326 100%);
+  color: #071710; font-family: var(--font-body); font-size: 6cqw; font-weight: 800;
+  letter-spacing: 0.08em; text-transform: uppercase; white-space: nowrap;
+  box-shadow: 0 4cqw 12cqw rgba(0, 0, 0, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
+}
+.hero-tag__cta svg { width: 6.2cqw; height: 6.2cqw; stroke: #071710; stroke-width: 2.8; flex-shrink: 0; transition: transform 0.3s var(--ease); }
+.hero-tag:hover .hero-tag__cta { transform: translateY(-1.5cqw) scale(1.05); box-shadow: 0 6cqw 16cqw rgba(0, 0, 0, 0.65), 0 0 18px rgba(242, 192, 99, 0.75); }
+.hero-tag:hover .hero-tag__cta svg { transform: translate(1.5cqw, -1.5cqw); }
 .hero-tag__spark { position: absolute; width: 6cqw; height: 6cqw; background: #fff6d0; clip-path: polygon(50% 0, 62% 38%, 100% 50%, 62% 62%, 50% 100%, 38% 62%, 0 50%, 38% 38%); opacity: 0; animation: tagTwinkle 3.2s ease-in-out infinite; }
 .hero-tag__spark--a { top: 6%; right: 8%; }
 .hero-tag__spark--b { bottom: 20%; left: 4%; width: 4cqw; height: 4cqw; animation-delay: 1.4s; }
@@ -3902,7 +3917,7 @@ input[type="range"]::-moz-range-thumb { background: var(--gold-400); border-colo
 @keyframes tagTwinkle { 0%, 100% { opacity: 0; transform: scale(0.4) rotate(0); } 50% { opacity: 1; transform: scale(1) rotate(45deg); } }
 @media (max-width: 900px) {
   .hero-tag { width: 142px; top: calc(var(--header-h, 72px) + 30px); right: 28px; }
-  .hero__content { padding-top: calc(var(--header-h, 72px) + 200px); }
+  .hero__content { padding-top: calc(var(--header-h, 72px) + 215px); }
 }
 @media (prefers-reduced-motion: reduce) { .hero-tag, .hero-tag__orbit, .hero-tag__banner::after, .hero-tag__spark { animation: none; } .hero-tag { transform: rotate(2deg); } .hero-tag__spark { opacity: 0.8; } }
 
